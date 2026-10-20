@@ -844,7 +844,7 @@ a[href*="report_abuse"] {
 
 
 /* GOOD GIRL GRAPHICS — AZRA PURPLE CORNER CREDIT + NATIVE VIP REPLACEMENT */
-#MSCodesFixer img[src*="vip" i], img[src*="vip" i]:not(#ggg-azra-logo) {content:url("https://www.redlightcenter.com/bucket/a7ad8359-f0ef-4059-8470-977f66ef8cdf") !important;width:44px!important;max-width:44px!important;height:auto!important;}
+#MSCodesFixer img[src*="vip" i], img[src*="vip" i]:not(#ggg-azra-logo) {content:url("https://www.redlightcenter.com/bucket/9416902b-1299-4442-94c1-d6f4a430f389") !important;width:44px!important;max-width:44px!important;height:auto!important;}
 #ggg-azra-credit{position:fixed!important;top:0!important;left:0!important;width:150px!important;z-index:2147483647!important;display:block!important;background:transparent!important;border:0!important}
 #ggg-azra-credit #ggg-azra-logo{content:normal!important;display:block!important;width:100%!important;max-width:100%!important;height:auto!important;border:0!important;background:transparent!important}
 </style>
@@ -909,4 +909,4 @@ a[href*="report_abuse"] {
 
 </div>
 <!-- GOOD GIRL GRAPHICS CLICKABLE CORNER CREDIT -->
-<a id="ggg-azra-credit" href="https://www.redlightcenter.com/net/profile/view_profile.aspx?MemberID=104968384" target="_blank" rel="noopener noreferrer" title="Good Girl Graphics"><img id="ggg-azra-logo" src="https://www.redlightcenter.com/bucket/9416902b-1299-4442-94c1-d6f4a430f389" alt="Good Girl Graphics"></a>
+<a id="ggg-azra-credit" href="https://www.redlightcenter.com/net/profile/view_profile.aspx?MemberID=104968384" target="_blank" rel="noopener noreferrer" title="Good Girl Graphics"><img id="ggg-azra-logo" src="https://www.redlightcenter.com/bucket/a7ad8359-f0ef-4059-8470-977f66ef8cdf" alt="Good Girl Graphics"></a>
