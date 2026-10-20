@@ -1,0 +1,912 @@
+<style type="text/css">
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap');
+
+/* ==========================================
+   AZRA V11 - COMPLETE PROFILE
+========================================== */
+
+/* PAGE BACKGROUND */
+
+html,
+body#ctl00_oMasterBody {
+  background: #050208 !important;
+}
+
+body#ctl00_oMasterBody {
+  color: #ead8f5 !important;
+  font-family: Georgia, serif !important;
+
+  background-image:
+    radial-gradient(
+      ellipse at 10% 35%,
+      rgba(117,22,167,.26),
+      transparent 38%
+    ),
+    radial-gradient(
+      ellipse at 90% 55%,
+      rgba(139,30,188,.24),
+      transparent 40%
+    ),
+    repeating-linear-gradient(
+      135deg,
+      transparent 0px,
+      transparent 75px,
+      rgba(133,36,175,.045) 76px,
+      transparent 78px
+    ) !important;
+
+  background-attachment: fixed !important;
+}
+
+/* MAIN WIDTH */
+
+#masterMainDiv {
+  position: relative !important;
+  width: 100% !important;
+  min-width: 1080px !important;
+}
+
+#ctl00_oMasterPanelSizer,
+#ctl00_oMasterContentDiv,
+#ctl00_oMasterContentDiv > div {
+  width: 1060px !important;
+  max-width: 1060px !important;
+}
+
+/* REMOVE DEFAULT HEADER AND ADS */
+
+#ctl00_oMasterHeaderDiv,
+#pnlNavLinks,
+#ctl00_pnlLegacyAdSystem,
+#ctl00_oMasterAdDiv {
+  display: none !important;
+  height: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* ==========================================
+   MAIN AZRA BANNER
+========================================== */
+
+#ctl00_pnlTools {
+  display: block !important;
+  width: 1060px !important;
+  height: auto !important;
+  padding: 0 0 12px !important;
+  margin: 0 auto 15px !important;
+  background: #100519 !important;
+  border: 1px solid #8532ad !important;
+  box-sizing: border-box !important;
+  overflow: hidden !important;
+}
+
+#ctl00_pnlTools:before {
+  content: "" !important;
+  display: block !important;
+  width: 100% !important;
+  height: 300px !important;
+
+  background:
+    #050208
+    url("https://www.redlightcenter.com/bucket/ec5c6447-e1ef-4621-8818-74f0f1f7f13e")
+    center / contain no-repeat !important;
+
+  border-bottom: 1px solid #8b36b9;
+  margin-bottom: 12px;
+}
+
+/* ==========================================
+   SEARCH TOOLBAR
+========================================== */
+
+#ctl00_pnlTools form {
+  display: block !important;
+  width: calc(100% - 36px) !important;
+  height: 46px !important;
+  min-height: 46px !important;
+  margin: 0 18px !important;
+  padding: 0 !important;
+}
+
+#ctl00_pnlTools form > div {
+  float: none !important;
+  display: block !important;
+  width: 100% !important;
+  text-align: left !important;
+}
+
+#ctl00_pnlTools form table {
+  width: 100% !important;
+  height: 46px !important;
+  table-layout: fixed !important;
+  border-collapse: separate !important;
+  border-spacing: 10px 0 !important;
+  margin: 0 !important;
+}
+
+#ctl00_pnlTools form tr {
+  height: 46px !important;
+}
+
+#ctl00_pnlTools form td {
+  height: 44px !important;
+  padding: 0 !important;
+  vertical-align: middle !important;
+  white-space: nowrap !important;
+  box-sizing: border-box !important;
+}
+
+#ctl00_pnlTools form td:first-child {
+  display: none !important;
+}
+
+#ctl00_pnlTools form td:nth-child(2) {
+  width: auto !important;
+}
+
+#ctl00_pnlTools .MPSearchText {
+  display: block !important;
+  width: 100% !important;
+  min-width: 0 !important;
+  height: 52px !important;
+  box-sizing: border-box !important;
+  background: #13071e !important;
+  color: #ffffff !important;
+  border: 1px solid #a34fd3 !important;
+  border-radius: 0 !important;
+  padding: 0 14px !important;
+  font: 15px Georgia, serif !important;
+  outline: none !important;
+
+  box-shadow:
+    inset 0 0 12px rgba(110,30,155,.25),
+    0 0 7px rgba(145,40,195,.18) !important;
+}
+
+#ctl00_pnlTools .MPSearchText:focus {
+  border-color: #e1a4ff !important;
+  box-shadow: 0 0 13px rgba(181,54,242,.65) !important;
+}
+
+/* MATCHING TOOLBAR BUTTONS */
+
+#ctl00_pnlTools form td:nth-child(3),
+#ctl00_pnlTools form td:nth-child(4) {
+  position: relative !important;
+  width: 165px !important;
+  min-width: 165px !important;
+  max-width: 165px !important;
+  height: 52px !important;
+  padding: 0 !important;
+  box-sizing: border-box !important;
+}
+
+#ctl00_pnlTools form td:nth-child(3) {
+  background: linear-gradient(180deg,#321344,#10051b) !important;
+  border: 1px solid #a34fd3 !important;
+
+  box-shadow:
+    inset 0 0 12px rgba(115,30,160,.35),
+    0 0 8px rgba(126,31,180,.3) !important;
+}
+
+#ctl00_pnlTools form td:nth-child(3) input[type="image"] {
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  border: 0 !important;
+  opacity: 0 !important;
+  cursor: pointer !important;
+  z-index: 3 !important;
+}
+
+#ctl00_pnlTools form td:nth-child(3):after {
+  content: "SEARCH" !important;
+  position: absolute !important;
+  inset: 0 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  color: #f6e6ff !important;
+  font-family: 'Cinzel Decorative',Georgia,serif !important;
+  font-size: 13px !important;
+  font-weight: 700 !important;
+  letter-spacing: 1px !important;
+  text-shadow: 0 0 9px rgba(191,79,245,.9) !important;
+  pointer-events: none !important;
+  z-index: 4 !important;
+}
+
+#ctl00_pnlTools form td:nth-child(3):hover {
+  background: #54206f !important;
+  border-color: #edbaff !important;
+  box-shadow: 0 0 18px rgba(181,54,242,.8) !important;
+}
+
+/* SIGN OUT */
+
+#ctl00_lnkMasterLogInOut {
+  position: relative !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 100% !important;
+  height: 52px !important;
+  box-sizing: border-box !important;
+  background: linear-gradient(180deg,#321344,#10051b) !important;
+  border: 1px solid #a34fd3 !important;
+  text-decoration: none !important;
+
+  box-shadow:
+    inset 0 0 12px rgba(115,30,160,.35),
+    0 0 8px rgba(126,31,180,.3) !important;
+}
+
+#ctl00_imgMasterLogInOut {
+  position: absolute !important;
+  inset: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  opacity: 0 !important;
+}
+
+#ctl00_lnkMasterLogInOut:after {
+  content: "SIGN OUT" !important;
+  display: block !important;
+  color: #f6e6ff !important;
+  font-family: 'Cinzel Decorative',Georgia,serif !important;
+  font-size: 13px !important;
+  font-weight: 700 !important;
+  letter-spacing: 1px !important;
+  text-shadow: 0 0 9px rgba(191,79,245,.9) !important;
+  pointer-events: none !important;
+}
+
+#ctl00_lnkMasterLogInOut:hover {
+  background: #54206f !important;
+  border-color: #edbaff !important;
+  box-shadow: 0 0 18px rgba(181,54,242,.8) !important;
+}
+
+/* ==========================================
+   NATIVE PROFILE LAYOUT
+========================================== */
+
+#MSCodesFixer {
+  position: relative !important;
+  width: 860px !important;
+  margin: 0 0 0 190px !important;
+  background: #0b0411 !important;
+  border: 1px solid #75309c !important;
+  box-shadow: 0 0 18px #7425a055;
+  overflow: visible !important;
+}
+
+#MSCodesFixer > tbody > tr > td {
+  background: #0b0411 !important;
+  color: #ead8f5 !important;
+  padding: 220px 10px 12px !important;
+}
+
+#MSCodesFixer table,
+#MSCodesFixer tbody,
+#MSCodesFixer tr,
+#MSCodesFixer td {
+  background-color: transparent !important;
+  color: #ead8f5 !important;
+}
+
+#MSCodesFixer span,
+#MSCodesFixer font,
+#MSCodesFixer b,
+#MSCodesFixer p,
+#MSCodesFixer div {
+  color: #ead8f5;
+}
+
+#MSCodesFixer a {
+  color: #d995ff !important;
+}
+
+#MSCodesFixer a:hover {
+  color: #ffffff !important;
+  text-shadow: 0 0 9px #b536f2;
+}
+
+#MSCodesFixer div[style*="sec-header-bg-bk.gif"] {
+  background: linear-gradient(90deg,#1b0828,#552074,#1b0828) !important;
+  color: #ffffff !important;
+  border: 1px solid #8b37b3;
+  height: 27px !important;
+  box-sizing: border-box;
+  padding: 3px !important;
+}
+
+#MSCodesFixer div[style*="sec-header-bg-bk.gif"] div {
+  color: #ffffff !important;
+}
+
+.PDispBox {
+  background: #16091f !important;
+  border: 1px solid #713294 !important;
+}
+
+/* ==========================================
+   GOTHIC SIDEBAR
+========================================== */
+
+#azra-v5-nav {
+  position: absolute !important;
+  top: 0 !important;
+  left: -185px !important;
+  width: 180px !important;
+  height: 100% !important;
+  min-height: 675px !important;
+
+  background-color: #10051b !important;
+  background-image:
+    url("https://www.redlightcenter.com/bucket/1dc0075a-5db2-4379-831d-defda2311475") !important;
+
+  background-position: center top !important;
+  background-repeat: repeat-y !important;
+  background-size: 100% auto !important;
+
+  border: 0 !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  z-index: 10 !important;
+}
+
+#azra-v5-nav a {
+  position: absolute !important;
+  display: flex !important;
+  left: 9% !important;
+  width: 82% !important;
+  height: 40px !important;
+  align-items: center !important;
+  justify-content: center !important;
+  box-sizing: border-box !important;
+  background: rgba(12,3,22,.82) !important;
+  border: 1px solid rgba(173,79,226,.85) !important;
+  color: #f6e6ff !important;
+
+  font-family: 'Cinzel Decorative',Georgia,serif !important;
+  font-size: 11px !important;
+  font-weight: 700 !important;
+  letter-spacing: .4px !important;
+  text-align: center !important;
+  text-decoration: none !important;
+  text-transform: uppercase !important;
+
+  text-shadow: 0 0 7px rgba(184,74,239,.9) !important;
+
+  box-shadow:
+    inset 0 0 12px rgba(100,20,150,.25),
+    0 0 8px rgba(126,31,180,.35) !important;
+
+  cursor: pointer !important;
+  transition: background .2s,box-shadow .2s,border-color .2s !important;
+  z-index: 11 !important;
+}
+
+#azra-v5-nav a:hover {
+  background: rgba(101,25,145,.92) !important;
+  border-color: #edbaff !important;
+  color: #ffffff !important;
+
+  box-shadow:
+    0 0 18px rgba(181,54,242,.85),
+    inset 0 0 10px rgba(210,130,255,.2) !important;
+}
+
+#azra-v5-nav .nav-home {
+  top: 180px !important;
+}
+
+#azra-v5-nav .nav-search {
+  top: 232px !important;
+}
+
+#azra-v5-nav .nav-clothing {
+  top: 284px !important;
+}
+
+#azra-v5-nav .nav-calendar {
+  top: 336px !important;
+}
+
+#azra-v5-nav .nav-news {
+  top: 388px !important;
+}
+
+#azra-v5-nav .nav-support {
+  top: 440px !important;
+}
+
+#azra-v5-nav .nav-affiliates {
+  top: 492px !important;
+}
+
+/* ==========================================
+   ABOUT ME BACKGROUND
+========================================== */
+
+#azra-v5-about {
+  position: absolute !important;
+  top: 10px !important;
+  left: 10px !important;
+  width: 820px !important;
+  height: 197px !important;
+  min-height: 197px !important;
+  box-sizing: border-box !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 1px solid #8834b4 !important;
+
+  background-color: #08030e !important;
+  background-image:
+    url("https://www.redlightcenter.com/bucket/e0b5cec4-55db-4e21-84fe-a4289c6dbad0") !important;
+
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+  background-size: 100% 135% !important;
+
+  box-shadow: 0 0 14px #7425a055;
+  overflow: hidden !important;
+  z-index: 4 !important;
+}
+
+/* ==========================================
+   WELCOME TO MY WORLD TITLE
+========================================== */
+
+#azra-v5-about h2 {
+  display: block !important;
+  position: absolute !important;
+  top: 10px !important;
+  left: 0 !important;
+  width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  background: transparent !important;
+  border: 0 !important;
+
+  color: #f6ddff !important;
+  font-family: 'Cinzel Decorative',Georgia,serif !important;
+  font-size: 18px !important;
+  font-weight: 700 !important;
+  letter-spacing: 3px !important;
+  line-height: 32px !important;
+  text-align: center !important;
+
+  text-shadow:
+    0 0 5px #000000,
+    0 0 10px #c15aff,
+    0 0 18px #8422c2 !important;
+
+  z-index: 5 !important;
+}
+
+/* ==========================================
+   SCROLLING PERSONAL INTRODUCTION
+========================================== */
+
+/* CLIPPED TEXT WINDOW */
+
+#azra-v5-about .azra-v5-inner {
+  position: absolute !important;
+  top: 52px !important;
+  left: 125px !important;
+  width: 570px !important;
+  height: 125px !important;
+
+  box-sizing: border-box !important;
+  margin: 0 !important;
+  padding: 0 !important;
+
+  overflow: hidden !important;
+  background: rgba(5,1,12,.42) !important;
+  border: 1px solid rgba(180,83,225,.28) !important;
+
+  text-align: center !important;
+  z-index: 4 !important;
+}
+
+/* SCROLLING TEXT */
+
+#azra-v5-about .azra-scroll-text {
+  position: relative !important;
+  display: block !important;
+
+  width: 100% !important;
+  box-sizing: border-box !important;
+
+  padding: 10px 22px 22px !important;
+  margin: 0 !important;
+
+  color: #f5e8ff !important;
+  font-family: Georgia,serif !important;
+  font-size: 15px !important;
+  line-height: 1.7 !important;
+  text-align: center !important;
+
+  text-shadow:
+    0 1px 4px #000,
+    0 0 7px rgba(180,82,230,.55) !important;
+
+  animation: azra-scroll-up 35s linear infinite !important;
+}
+
+/* SCROLL FROM BELOW TO ABOVE */
+
+@keyframes azra-scroll-up {
+  0% {
+    transform: translateY(125px);
+  }
+
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
+/* PAUSE WHILE READING */
+
+#azra-v5-about .azra-v5-inner:hover .azra-scroll-text {
+  animation-play-state: paused !important;
+}
+
+/* ACCESSIBILITY */
+
+@media (prefers-reduced-motion: reduce) {
+  #azra-v5-about .azra-scroll-text {
+    animation: none !important;
+  }
+
+  #azra-v5-about .azra-v5-inner {
+    overflow-y: auto !important;
+  }
+}
+
+/* ==========================================
+   BOOKS FIELD
+========================================== */
+
+#ctl00_oCPH1_lblBooks {
+  font-size: 0 !important;
+}
+
+#ctl00_oCPH1_lblBooks #azra-v5-nav,
+#ctl00_oCPH1_lblBooks #azra-v5-about {
+  font-size: 14px !important;
+}
+
+#ctl00_oCPH1_lblBooks #azra-v5-nav a {
+  font-size: 11px !important;
+  color: #f6e6ff !important;
+}
+
+#ctl00_oCPH1_lblBooks #azra-v5-about h2 {
+  font-size: 18px !important;
+}
+
+#ctl00_oCPH1_lblBooks #azra-v5-about .azra-scroll-text {
+  font-size: 15px !important;
+}
+
+
+
+/* ===================================================
+   AZRA CLEAN — THIN PURPLE BORDERS ONLY
+   No gothic frame images, stretching or layout changes.
+   =================================================== */
+
+/* Every native section title gets a fine purple outline. */
+#MSCodesFixer div[style*="sec-header-bg-bk.gif"] {
+  box-sizing: border-box !important;
+  height: auto !important;
+  min-height: 28px !important;
+  padding: 5px 9px !important;
+  background: #14081e !important;
+  border: 1px solid #a14abf !important;
+  box-shadow: none !important;
+  text-align: center !important;
+}
+
+/* Keep the original headings; give them consistent lettering. */
+#MSCodesFixer div[style*="sec-header-bg-bk.gif"] > div,
+#MSCodesFixer div[style*="sec-header-bg-bk.gif"] span,
+#MSCodesFixer div[style*="sec-header-bg-bk.gif"] b {
+  font-family: 'Cinzel Decorative', Georgia, serif !important;
+  color: #f1dbfa !important;
+  text-align: center !important;
+}
+
+/* Thin borders around each section's immediate content block,
+   rather than around a whole shared table column. */
+#MSCodesFixer div[style*="sec-header-bg-bk.gif"] + div {
+  box-sizing: border-box !important;
+  background: #0b0411 !important;
+  border: 1px solid #a14abf !important;
+  border-top: 0 !important;
+  box-shadow: none !important;
+}
+
+/* Existing native content boxes and tables keep their sizes. */
+#MSCodesFixer .PDispBox {
+  background: #0b0411 !important;
+  border: 1px solid #a14abf !important;
+  box-shadow: none !important;
+}
+
+/* Don't introduce decoration, artificial heights, or positioning.
+   Original profile links and native controls remain usable. */
+
+
+/* ============================================================
+   AZRA V28 — POLISHED FINISH, NO LAYOUT CHANGES
+   Only color, typography, borders, and gentle lighting.
+   ============================================================ */
+
+/* Subtle plum sheen on the existing native section headings. */
+#MSCodesFixer div[style*="sec-header-bg-bk.gif"] {
+  background: linear-gradient(180deg, #30113e 0%, #1a0925 48%, #0d0515 100%) !important;
+  border-color: #ab59ca !important;
+  box-shadow: inset 0 1px 0 rgba(245,205,255,.20),
+              inset 0 -1px 0 rgba(129,41,172,.35),
+              0 0 7px rgba(162,62,205,.22) !important;
+  text-shadow: 0 0 7px rgba(188,104,229,.55) !important;
+}
+#MSCodesFixer div[style*="sec-header-bg-bk.gif"] > div,
+#MSCodesFixer div[style*="sec-header-bg-bk.gif"] span,
+#MSCodesFixer div[style*="sec-header-bg-bk.gif"] b {
+  color: #f6e8fc !important;
+  letter-spacing: .35px !important;
+  text-shadow: 0 0 5px rgba(188,104,229,.50) !important;
+}
+/* Matching low-contrast dark gradient on each native content box. */
+#MSCodesFixer div[style*="sec-header-bg-bk.gif"] + div {
+  background: linear-gradient(145deg, #12071b 0%, #09040f 65%, #13071c 100%) !important;
+  border-color: #85419f !important;
+  box-shadow: inset 0 0 18px rgba(103,30,142,.10),
+              0 2px 8px rgba(0,0,0,.20) !important;
+}
+#MSCodesFixer .PDispBox {
+  background: linear-gradient(145deg, #12071b, #09040f) !important;
+  border-color: #85419f !important;
+  box-shadow: inset 0 0 10px rgba(118,42,154,.10) !important;
+}
+/* All original native controls, links, and section positions remain intact. */
+
+
+/* AZRA V29 — REMOVE GRAY NATIVE HEADER ARROW BOXES ONLY */
+/* These are decorative collapse/expand images in the native headings. */
+#MSCodesFixer div[style*="sec-header-bg-bk.gif"] img,
+#MSCodesFixer div[style*="sec-header-bg-bk.gif"] input[type="image"],
+#MSCodesFixer img[src*="expand"],
+#MSCodesFixer img[src*="collapse"],
+#MSCodesFixer img[src*="arrow-down"],
+#MSCodesFixer img[src*="arrow-up"] {
+  display: none !important;
+  visibility: hidden !important;
+}
+
+
+/* =========================================================
+   AZRA V30 — BANNER, TOOLBAR, AND PROFILE WIDTH ALIGNMENT
+   Only these four areas are changed from V29.
+   ========================================================= */
+
+/* Full-bleed banner: fill the available 1060px, not 'contain'. */
+#ctl00_pnlTools:before {
+  background-image: url("https://www.redlightcenter.com/bucket/ec5c6447-e1ef-4621-8818-74f0f1f7f13e") !important;
+  background-color: #050208 !important;
+  background-position: center center !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  height: 300px !important;
+  margin-bottom: 8px !important;
+}
+
+/* A shorter, balanced search strip. */
+#ctl00_pnlTools {
+  padding-bottom: 8px !important;
+}
+#ctl00_pnlTools form,
+#ctl00_pnlTools form table,
+#ctl00_pnlTools form tr {
+  height: 36px !important;
+  min-height: 36px !important;
+}
+#ctl00_pnlTools form td,
+#ctl00_pnlTools form td:nth-child(3),
+#ctl00_pnlTools form td:nth-child(4) {
+  height: 36px !important;
+  min-height: 36px !important;
+}
+#ctl00_pnlTools .MPSearchText {
+  height: 36px !important;
+  font-size: 14px !important;
+}
+#ctl00_lnkMasterLogInOut {
+  height: 36px !important;
+  min-height: 36px !important;
+}
+#ctl00_pnlTools form td:nth-child(3) input[type="image"],
+#ctl00_imgMasterLogInOut {
+  height: 100% !important;
+}
+
+/* Main content reaches the same right edge as the 1060px banner,
+   allowing for the existing 190px left sidebar/navigation area. */
+#MSCodesFixer {
+  width: 870px !important;
+  margin-left: 190px !important;
+  box-sizing: border-box !important;
+}
+
+/* Welcome panel fills the main profile's inner content width. */
+#azra-v5-about {
+  left: 10px !important;
+  width: calc(100% - 20px) !important;
+  max-width: none !important;
+}
+
+
+/* ============================================================
+   AZRA V32 — MATCH THE BOTTOM OF THE PROFILE
+   Styling only: all native footer and report links remain active.
+   ============================================================ */
+
+/* Keep the page's bottom area aligned to the 1060px profile. */
+#ctl00_oMasterFooterDiv,
+#ctl00_oMasterFooter,
+#ctl00_pnlFooter,
+#masterFooterDiv,
+#masterFooter,
+#footer,
+footer {
+  box-sizing: border-box !important;
+  width: 1060px !important;
+  max-width: 1060px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  background: #0d0516 !important;
+  color: #cfa7e7 !important;
+  border-top: 1px solid #8f3bb5 !important;
+  border-left: 1px solid #522269 !important;
+  border-right: 1px solid #522269 !important;
+  border-bottom: 1px solid #522269 !important;
+  box-shadow: 0 0 12px rgba(143, 59, 181, .20) !important;
+  text-align: center !important;
+  font-family: Georgia, serif !important;
+}
+
+/* Utherverse sometimes uses a plain grey footer strip or a footer table. */
+#ctl00_oMasterFooterDiv table,
+#ctl00_oMasterFooter table,
+#ctl00_pnlFooter table,
+#masterFooterDiv table,
+#masterFooter table,
+#footer table,
+footer table,
+#ctl00_oMasterFooterDiv td,
+#ctl00_oMasterFooter td,
+#ctl00_pnlFooter td,
+#masterFooterDiv td,
+#masterFooter td,
+#footer td,
+footer td {
+  background: #13081f !important;
+  color: #d9b9eb !important;
+  border-color: #55236f !important;
+}
+
+/* All legal/help links stay clickable and readable. */
+#ctl00_oMasterFooterDiv a,
+#ctl00_oMasterFooter a,
+#ctl00_pnlFooter a,
+#masterFooterDiv a,
+#masterFooter a,
+#footer a,
+footer a {
+  color: #e4c2f5 !important;
+  text-decoration: none !important;
+  font-size: 12px !important;
+  text-shadow: 0 0 3px rgba(163, 65, 199, .28) !important;
+}
+#ctl00_oMasterFooterDiv a:hover,
+#ctl00_oMasterFooter a:hover,
+#ctl00_pnlFooter a:hover,
+#masterFooterDiv a:hover,
+#masterFooter a:hover,
+#footer a:hover,
+footer a:hover {
+  color: #fff !important;
+  text-decoration: underline !important;
+}
+
+/* The report-abuse link above the footer, without hiding it. */
+a[href*="ReportAbuse"],
+a[href*="reportabuse"],
+a[href*="Report_Abuse"],
+a[href*="report_abuse"] {
+  color: #d7a5ed !important;
+  font-family: 'Cinzel Decorative', Georgia, serif !important;
+  font-size: 13px !important;
+  text-shadow: 0 0 5px rgba(163, 65, 199, .30) !important;
+}
+
+
+/* GOOD GIRL GRAPHICS — AZRA PURPLE CORNER CREDIT + NATIVE VIP REPLACEMENT */
+#MSCodesFixer img[src*="vip" i], img[src*="vip" i]:not(#ggg-azra-logo) {content:url("https://www.redlightcenter.com/bucket/a7ad8359-f0ef-4059-8470-977f66ef8cdf") !important;width:44px!important;max-width:44px!important;height:auto!important;}
+#ggg-azra-credit{position:fixed!important;top:0!important;left:0!important;width:150px!important;z-index:2147483647!important;display:block!important;background:transparent!important;border:0!important}
+#ggg-azra-credit #ggg-azra-logo{content:normal!important;display:block!important;width:100%!important;max-width:100%!important;height:auto!important;border:0!important;background:transparent!important}
+</style>
+
+<!-- =========================================
+     SIDEBAR NAVIGATION
+========================================== -->
+
+<div id="azra-v5-nav">
+
+  <a class="nav-home"
+     href="/net/home.aspx">HOME</a>
+
+  <a class="nav-search"
+     href="/net/search/search.aspx">SEARCH</a>
+
+  <a class="nav-clothing"
+     href="https://www.utherverse.com/Clothing/">CLOTHING</a>
+
+  <a class="nav-calendar"
+     href="https://www.utherverse.com/Events/">CALENDAR</a>
+
+  <a class="nav-news"
+     href="/news">NEWS</a>
+
+  <a class="nav-support"
+     href="https://support.utherverse.com/">SUPPORT</a>
+
+  <a class="nav-affiliates"
+     href="/Affiliate/">AFFILIATES</a>
+
+</div>
+
+<!-- =========================================
+     WELCOME TO MY WORLD
+========================================== -->
+
+<div id="azra-v5-about">
+
+  <h2>WELCOME TO MY WORLD</h2>
+
+  <div class="azra-v5-inner">
+
+    <div class="azra-scroll-text">
+
+      <!-- ===================================
+           AZRA CAN EDIT HER TEXT BELOW
+           WITHOUT CHANGING THE CSS
+      ==================================== -->
+
+      <p>Welcome to my world! I'm Azra, happily married to my one and only wife, Tyra. Together, we're two strong-willed Doms who know what we want and aren't afraid to go after it. We're both looking for subs who understand respect, loyalty, and the beauty of a genuine connection.</p>
+
+      <p>Beyond our dominant sides, Tyra and I are also business partners, running our own clothing business and store. We love creating, building, and making our mark together.</p>
+
+      <p><strong>Two Doms, one love, and a world that's entirely our own.</strong></p>
+
+      <!-- END OF EDITABLE PERSONAL TEXT -->
+
+    </div>
+
+  </div>
+
+</div>
+<!-- GOOD GIRL GRAPHICS CLICKABLE CORNER CREDIT -->
+<a id="ggg-azra-credit" href="https://www.redlightcenter.com/net/profile/view_profile.aspx?MemberID=104968384" target="_blank" rel="noopener noreferrer" title="Good Girl Graphics"><img id="ggg-azra-logo" src="https://www.redlightcenter.com/bucket/9416902b-1299-4442-94c1-d6f4a430f389" alt="Good Girl Graphics"></a>
