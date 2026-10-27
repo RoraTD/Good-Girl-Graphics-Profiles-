@@ -1,0 +1,201 @@
+<style>
+#ophelia-books #op-memories .op-causes-gallery{display:grid!important;grid-template-columns:repeat(auto-fit,minmax(230px,1fr))!important;gap:18px!important;margin:20px auto!important;align-items:start!important}
+#ophelia-books #op-memories .op-causes-gallery a{display:block!important;min-width:0!important;padding:10px!important;border:1px solid #527f71!important;border-radius:10px!important;background:linear-gradient(135deg,#123d32,#281a38)!important;text-align:center!important;box-sizing:border-box!important}
+#ophelia-books #op-memories .op-causes-gallery img{display:block!important;width:100%!important;height:auto!important;max-width:100%!important;object-fit:contain!important;border-radius:5px!important}
+</style>
+
+<style>
+#ophelia-books #op-love .op-wedding-grid{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:20px!important;width:100%!important;box-sizing:border-box!important;margin:18px auto 24px!important}
+#ophelia-books #op-love .op-wedding-grid figure{margin:0!important;min-width:0!important;padding:6px!important;box-sizing:border-box!important;background:linear-gradient(135deg,#123d32,#281a38)!important;border:1px solid #477c6c!important;border-radius:12px!important;overflow:hidden!important}
+#ophelia-books #op-love .op-wedding-grid img{display:block!important;width:100%!important;max-width:100%!important;height:520px!important;object-fit:contain!important;border-radius:6px!important;background:#0c1115!important}
+#ophelia-books #op-love .op-wedding-videos{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:20px!important;width:100%!important;box-sizing:border-box!important;margin:16px auto!important}
+#ophelia-books #op-love .op-wedding-video{min-width:0!important;padding:8px!important;background:linear-gradient(135deg,#123d32,#281a38)!important;border:1px solid #477c6c!important;border-radius:12px!important;box-sizing:border-box!important}
+#ophelia-books #op-love .op-wedding-video iframe{display:block!important;width:100%!important;max-width:100%!important;aspect-ratio:16/9!important;height:auto!important;min-height:220px!important;border:0!important;border-radius:6px!important}
+#ophelia-books #op-love h2{font-family:Cinzel,Georgia,serif!important;font-size:30px!important;font-weight:600!important;color:#e9d6f4!important;text-align:center!important}
+#ophelia-books #op-love .op-wedding-caption{font-family:Lora,Georgia,serif!important;font-size:15px!important;line-height:1.5!important;color:#eee9f1!important;text-align:center!important;padding:9px 4px 3px!important}
+@media (max-width:650px){#ophelia-books #op-love .op-wedding-grid,#ophelia-books #op-love .op-wedding-videos{grid-template-columns:1fr!important}
+#ophelia-books #op-love .op-wedding-grid img{height:auto!important;max-height:600px!important}}
+#ophelia-books #op-dance .op-exotica-feature{width:100%!important;max-width:660px!important;margin:18px auto 8px!important;text-align:center!important}
+#ophelia-books #op-dance .op-exotica-feature img{display:block!important;max-width:100%!important;width:auto!important;height:auto!important;max-height:650px!important;object-fit:contain!important;margin:0 auto!important;border-radius:10px!important}
+#ophelia-books #op-dance .op-exotica-feature{position:relative!important;isolation:isolate!important;padding:10px!important;box-sizing:border-box!important;overflow:hidden!important;border-radius:16px!important;background:linear-gradient(125deg,rgba(18,61,50,.8),rgba(40,26,56,.9),rgba(18,61,50,.8))!important;border:1px solid rgba(124,170,151,.7)!important;box-shadow:0 14px 35px rgba(0,0,0,.35)!important}
+#ophelia-books #op-dance .op-exotica-feature:before{content:""!important;position:absolute!important;z-index:-1!important;inset:-65%!important;background:conic-gradient(from 0deg,transparent 0deg,rgba(98,181,151,.18) 75deg,transparent 145deg,rgba(171,110,201,.22) 240deg,transparent 315deg)!important;animation:opExoticaHalo 22s linear infinite!important;pointer-events:none!important}
+#ophelia-books #op-dance .op-exotica-feature img{position:relative!important;max-width:100%!important;max-height:650px!important;animation:opExoticaFloat 6s ease-in-out infinite!important;filter:drop-shadow(0 10px 16px rgba(0,0,0,.45))!important;transition:filter .4s ease,transform .4s ease!important}
+#ophelia-books #op-dance .op-exotica-feature:hover img{animation-play-state:paused!important;transform:scale(1.025)!important;filter:drop-shadow(0 14px 22px rgba(0,0,0,.5)) drop-shadow(0 0 12px rgba(166,118,201,.35))!important}
+@keyframes opExoticaFloat{0%,100%{transform:translateY(0)}
+50%{transform:translateY(-9px)}}
+@keyframes opExoticaHalo{to{transform:rotate(360deg)}}
+@media (prefers-reduced-motion:reduce){#ophelia-books #op-dance .op-exotica-feature:before,#ophelia-books #op-dance .op-exotica-feature img{animation:none!important}}
+#ophelia-books #op-dance .op-exotica-calendar-wrap{width:100%!important;max-width:1100px!important;margin:22px auto 12px!important;padding:14px!important;box-sizing:border-box!important;background:linear-gradient(135deg,rgba(18,61,50,.95),rgba(40,26,56,.96))!important;border:1px solid #477c6c!important;border-radius:14px!important;box-shadow:0 8px 24px rgba(0,0,0,.25)!important}
+#ophelia-books #op-dance .op-exotica-calendar-title{font-family:Cinzel,Georgia,serif!important;color:#e9d6f4!important;font-size:20px!important;text-align:center!important;margin:2px 0 6px!important;font-weight:600!important}
+#ophelia-books #op-dance .op-exotica-calendar-note{font-family:Lora,Georgia,serif!important;color:#d8d1df!important;font-size:13px!important;text-align:center!important;margin:0 0 14px!important}
+#ophelia-books #op-dance .op-exotica-calendar-frame{width:100%!important;overflow:hidden!important;border-radius:8px!important;background:#fff!important}
+#ophelia-books #op-dance .op-exotica-calendar-frame iframe{display:block!important;width:100%!important;height:650px!important;border:0!important}
+@media (max-width:700px){#ophelia-books #op-dance .op-exotica-calendar-wrap{padding:8px!important}
+#ophelia-books #op-dance .op-exotica-calendar-frame iframe{height:520px!important}}
+#ophelia-books #op-family .op-family-banner{max-width:1050px!important;margin:18px auto 22px!important;text-align:center!important}
+#ophelia-books #op-family .op-family-banner img{display:block!important;width:100%!important;height:auto!important;max-height:480px!important;object-fit:contain!important;margin:auto!important;border-radius:10px!important}
+#ophelia-books #op-family .op-family-grid{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:18px!important;width:100%!important;max-width:1100px!important;margin:0 auto 16px!important;align-items:stretch!important}
+#ophelia-books #op-family .op-family-grid figure{position:relative!important;isolation:isolate!important;overflow:hidden!important;aspect-ratio:3/4!important;margin:0!important;padding:7px!important;min-width:0!important;box-sizing:border-box!important;border:1px solid #477c6c!important;border-radius:10px!important;background:linear-gradient(135deg,#123d32,#281a38)!important}
+#ophelia-books #op-family .op-family-grid figure:before{content:""!important;position:absolute!important;inset:0!important;background-image:var(--family-photo)!important;background-size:cover!important;background-position:center!important;filter:blur(18px) brightness(.4)!important;transform:scale(1.12)!important;z-index:-1!important}
+#ophelia-books #op-family .op-family-grid a{display:flex!important;align-items:center!important;justify-content:center!important;width:100%!important;height:100%!important;position:relative!important;z-index:1!important}
+#ophelia-books #op-family .op-family-grid img{display:block!important;width:100%!important;height:100%!important;max-width:100%!important;max-height:100%!important;object-fit:contain!important;object-position:center center!important;background:transparent!important;border-radius:6px!important}
+@media (max-width:650px){#ophelia-books #op-family .op-family-grid{grid-template-columns:1fr!important;max-width:540px!important}}
+</style>
+
+<style>
+#ophelia-books #op-creations .lo-intro{text-align:center;max-width:850px;margin:10px auto 22px!important;line-height:1.7}
+#ophelia-books #op-creations .lo-brand{font-family:Cinzel,Georgia,serif!important;text-align:center;font-size:clamp(26px,3.3vw,44px);letter-spacing:2px;color:#f5e9fa;text-shadow:0 0 14px #7a4ba3;margin:12px 0}
+#ophelia-books #op-creations .lo-subhead{font-family:Cinzel,Georgia,serif!important;color:#e9d5f5;text-align:center;font-size:22px;margin:25px 0 13px;border-bottom:1px solid #518776;padding-bottom:10px}
+#ophelia-books #op-creations .lo-notice{background:linear-gradient(110deg,#102f2b,#231833);border:1px solid #4a7769;border-radius:10px;padding:16px 22px;text-align:center;line-height:1.65;margin:18px 0}
+#ophelia-books #op-creations .lo-prices{width:100%;border-collapse:collapse;table-layout:auto;background:transparent!important}
+#ophelia-books #op-creations .lo-prices th,#ophelia-books #op-creations .lo-prices td{padding:12px 14px!important;border-bottom:1px solid rgba(114,174,155,.35)!important;color:#f0e7f4!important;background:transparent!important;vertical-align:top}
+#ophelia-books #op-creations .lo-prices th{text-align:left;color:#a6eee0!important;white-space:nowrap}
+#ophelia-books #op-creations .lo-prices td:last-child{text-align:right;color:#e5b8f4!important;white-space:nowrap;font-weight:bold}
+#ophelia-books #op-creations .lo-price-panel{background:linear-gradient(125deg,rgba(18,61,50,.92),rgba(40,26,56,.96));border:1px solid #467b6b;border-radius:12px;padding:18px;margin:18px 0;box-sizing:border-box;overflow-x:auto}
+#ophelia-books #op-creations .lo-showcase{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin:18px 0}
+#ophelia-books #op-creations .lo-sample{border:1px solid #527f71;border-radius:10px;min-height:160px;padding:20px 12px;display:flex;align-items:center;justify-content:center;text-align:center;background:linear-gradient(145deg,#15392f,#281b39);font-family:Cinzel,Georgia,serif;color:#ead7f4;letter-spacing:1px}
+#ophelia-books #op-creations .lo-cta{text-align:center;background:linear-gradient(120deg,#1c493d,#30203f);border:1px solid #6a9c89;border-radius:12px;padding:22px;margin-top:20px}
+@media (max-width:750px){#ophelia-books #op-creations .lo-showcase{grid-template-columns:1fr 1fr}
+#ophelia-books #op-creations .lo-prices th,#ophelia-books #op-creations .lo-prices td{padding:9px 7px!important;font-size:12px}}
+#ophelia-books #op-creations .lo-showcase .lo-artwork{padding:12px!important;min-height:0!important;display:block!important}
+#ophelia-books #op-creations .lo-showcase .lo-artwork a{display:flex!important;flex-direction:column!important;align-items:center!important;justify-content:center!important;width:100%!important;height:100%!important;color:#ead7f4!important;text-decoration:none!important;gap:12px!important}
+#ophelia-books #op-creations .lo-showcase .lo-artwork img{display:block!important;width:auto!important;max-width:100%!important;height:auto!important;max-height:300px!important;object-fit:contain!important;border:0!important;border-radius:5px!important}
+#ophelia-books #op-creations .lo-showcase .lo-artwork span{display:block!important;font-family:Cinzel,Georgia,serif!important;font-size:15px!important;text-align:center!important;line-height:1.4!important}
+#ophelia-books #op-creations .lo-showcase .lo-slideshow-feature{padding:12px!important;min-width:0!important}
+#ophelia-books #op-creations .lo-showcase .lo-slideshow-inner{width:100%!important;min-width:0!important}
+#ophelia-books #op-creations .lo-showcase .lo-slideshow-inner iframe{display:block!important;width:100%!important;aspect-ratio:16/9!important;height:auto!important;border:0!important;border-radius:5px!important}
+#ophelia-books #op-creations .lo-showcase .lo-slideshow-inner span{display:block!important;margin-top:12px!important;font-family:Cinzel,Georgia,serif!important;font-size:15px!important;color:#ead7f4!important}
+#ophelia-books #op-creations .lo-showcase .lo-slideshow-inner a{display:inline-block!important;margin-top:8px!important;font-family:Lora,Georgia,serif!important;font-size:12px!important;color:#a6eee0!important;text-decoration:underline!important}
+@media (max-width:520px){#ophelia-books #op-creations .lo-showcase{grid-template-columns:1fr!important}}
+</style>
+
+<style>
+#ophelia-books #op-creations .lo-website-wrap{text-align:center;margin:20px auto 26px}
+#ophelia-books #op-creations .lo-website-button{display:inline-block;padding:15px 30px;border:1px solid #c0c0c0;border-radius:7px;background:linear-gradient(120deg,#123d32,#281a38);color:#f0edf3!important;font-family:Georgia,serif;font-size:17px;font-weight:bold;letter-spacing:1px;text-decoration:none!important;box-shadow:0 4px 16px rgba(0,0,0,.35);transition:background .2s,box-shadow .2s}
+#ophelia-books #op-creations .lo-website-button:hover{background:linear-gradient(120deg,#205b49,#49305e);box-shadow:0 0 18px rgba(192,192,192,.35);color:#fff!important}
+</style>
+
+<div id="ophelia-books">
+
+<section class="op-book" id="op-love">
+  <h2>Our Story, Our Forever</h2>
+  <p>Our love, our memories, and the moments we'll always treasure.</p>
+
+  <div class="op-wedding-grid">
+    <figure>
+      <a href="https://www.redlightcenter.com/bucket/99e6191a-924a-4406-9abd-7853df018e10" target="_blank" rel="noopener noreferrer">
+        <img src="https://www.redlightcenter.com/bucket/99e6191a-924a-4406-9abd-7853df018e10" alt="Our wedding memory one">
+      </a>
+    </figure>
+    <figure>
+      <a href="https://www.redlightcenter.com/bucket/73dcf13d-f69d-4284-b2d2-e3862fa7562d" target="_blank" rel="noopener noreferrer">
+        <img src="https://www.redlightcenter.com/bucket/73dcf13d-f69d-4284-b2d2-e3862fa7562d" alt="Our wedding memory two">
+      </a>
+    </figure>
+  </div>
+
+  <div class="op-wedding-videos">
+    <div class="op-wedding-video">
+      <iframe src="https://www.youtube.com/embed/nMDI6nIfxk4" title="Bunnii and Ophelia's Wedding Renewal" allowfullscreen="allowfullscreen" loading="lazy"></iframe>
+      <div class="op-wedding-caption">Our Wedding Renewal</div>
+    </div>
+    <div class="op-wedding-video">
+      <iframe src="https://www.youtube.com/embed/iD6fXiCq_dQ" title="Bunnii Family - Our Story, Our Forever" allowfullscreen="allowfullscreen" loading="lazy"></iframe>
+      <div class="op-wedding-caption">Our Story, Our Forever</div>
+    </div>
+  </div>
+</section>
+
+<section class="op-book" id="op-family">
+  <h2>Family &amp; Friends</h2>
+  <p>The people who make my world brighter.</p>
+  
+  <div class="op-family-banner"><img src="https://www.redlightcenter.com/bucket/d6073ea8-29db-4c6c-846a-18c710445244" alt="Bunnii Family gothic banner"></div>
+  
+  <div class="op-family-grid">
+    <figure style="--family-photo:url(https://www.redlightcenter.com/bucket/a09e1198-1bb5-4fa9-88f4-88d60c3a14b7)"><a href="https://www.redlightcenter.com/bucket/a09e1198-1bb5-4fa9-88f4-88d60c3a14b7" target="_blank" rel="noopener noreferrer"><img src="https://www.redlightcenter.com/bucket/a09e1198-1bb5-4fa9-88f4-88d60c3a14b7" alt="Family and friends photo 1"></a></figure>
+    <figure style="--family-photo:url(https://www.redlightcenter.com/bucket/5cedb19a-0b2e-4701-bb51-1097178a1a71)"><a href="https://www.redlightcenter.com/bucket/5cedb19a-0b2e-4701-bb51-1097178a1a71" target="_blank" rel="noopener noreferrer"><img src="https://www.redlightcenter.com/bucket/5cedb19a-0b2e-4701-bb51-1097178a1a71" alt="Family and friends photo 2"></a></figure>
+    <figure style="--family-photo:url(https://www.redlightcenter.com/bucket/295a6c15-4e35-41f7-b603-96acfcf88349)"><a href="https://www.redlightcenter.com/bucket/295a6c15-4e35-41f7-b603-96acfcf88349" target="_blank" rel="noopener noreferrer"><img src="https://www.redlightcenter.com/bucket/295a6c15-4e35-41f7-b603-96acfcf88349" alt="Family and friends photo 3"></a></figure>
+    <figure style="--family-photo:url(https://www.redlightcenter.com/bucket/eddee6bd-d28c-4d49-ac33-9d2b4d18f99f)"><a href="https://www.redlightcenter.com/bucket/eddee6bd-d28c-4d49-ac33-9d2b4d18f99f" target="_blank" rel="noopener noreferrer"><img src="https://www.redlightcenter.com/bucket/eddee6bd-d28c-4d49-ac33-9d2b4d18f99f" alt="Family and friends photo 4"></a></figure>
+  </div>
+  <div class="op-gallery"></div>
+</section>
+
+<section class="op-book" id="op-dance">
+  <h2>Exotica Dance Team</h2>
+  <p>Dance, friendships, and unforgettable nights in RLC.</p>
+  
+  <div class="op-exotica-feature">
+    <img src="https://www.redlightcenter.com/bucket/c51f808f-af59-4542-ae7f-92239963cd69" alt="Exotica Dance Team feature image">
+  </div>
+  <div class="op-exotica-calendar-wrap">
+    <div class="op-exotica-calendar-title">Exotica Events Calendar</div>
+    <p class="op-exotica-calendar-note">Upcoming performances and events</p>
+    <div class="op-exotica-calendar-frame">
+      
+      <iframe src="https://calendar.google.com/calendar/embed?src=bo5kpbmtim8po4ip29fbasfsm0%40group.calendar.google.com&amp;ctz=America%2FNew_York" width="800" height="600" frameborder="0" scrolling="no" title="Exotica Dance Team Calendar"></iframe>
+    </div>
+  </div>
+  <div class="op-gallery">
+    
+  </div>
+</section>
+
+<section class="op-book" id="op-creations">
+  <h2>Creations &amp; Showroom</h2>
+  <div class="lo-brand">Design by Lady O</div>
+  <p class="lo-intro">Custom photography, photo editing, slideshows, and personalized graphics. Explore the work, find a package that fits, and contact Lady O to discuss your project.</p>
+  <div class="lo-notice"><strong>About AI in my photos</strong><br>
+  I can use AI to make your avatars look more realistic, but I do not have to. If you do not want AI used in your order, just let me know.</div>
+  <h3 class="lo-subhead">Featured Creations</h3>
+  
+  <div class="lo-showcase">
+    <div class="lo-sample lo-artwork"><a href="https://www.redlightcenter.com/bucket/0fb9ecf2-18bb-4e8a-adaa-aa31eea1992b" target="_blank" rel="noopener noreferrer"><img src="https://www.redlightcenter.com/bucket/0fb9ecf2-18bb-4e8a-adaa-aa31eea1992b" alt="Family Crests by Lady O"><span>Family Crests</span></a></div>
+    <div class="lo-sample lo-artwork"><a href="https://www.redlightcenter.com/bucket/69885b63-5c51-4584-b540-f9de69959766" target="_blank" rel="noopener noreferrer"><img src="https://www.redlightcenter.com/bucket/69885b63-5c51-4584-b540-f9de69959766" alt="Wedding Photography by Lady O"><span>Wedding Photography</span></a></div>
+    <div class="lo-sample lo-artwork"><a href="https://www.redlightcenter.com/bucket/0c0e51ef-734c-4aca-ae37-eb8fb32deef5" target="_blank" rel="noopener noreferrer"><img src="https://www.redlightcenter.com/bucket/0c0e51ef-734c-4aca-ae37-eb8fb32deef5" alt="Custom Photo Edits by Lady O"><span>Custom Photo Edits</span></a></div>
+    <div class="lo-sample lo-artwork"><a href="https://www.redlightcenter.com/bucket/6d11df4f-d3f4-4fde-902d-74b351eb9058" target="_blank" rel="noopener noreferrer"><img src="https://www.redlightcenter.com/bucket/6d11df4f-d3f4-4fde-902d-74b351eb9058" alt="Custom Banners by Lady O"><span>Custom Banners</span></a></div>
+    <div class="lo-sample lo-artwork"><a href="https://www.redlightcenter.com/bucket/2d0b3d93-8b15-4249-9614-8a5d09bd8c6e" target="_blank" rel="noopener noreferrer"><img src="https://www.redlightcenter.com/bucket/2d0b3d93-8b15-4249-9614-8a5d09bd8c6e" alt="Scrapbook Creations by Lady O"><span>Scrapbook Creations</span></a></div>
+    <div class="lo-sample lo-slideshow-feature"><div class="lo-slideshow-inner"><iframe src="https://www.youtube.com/embed/iD6fXiCq_dQ" title="Lady O Slideshow Sample" loading="lazy" allowfullscreen="allowfullscreen" frameborder="0"></iframe><span>Slideshows</span><a href="https://youtu.be/iD6fXiCq_dQ" target="_blank" rel="noopener noreferrer">Watch on YouTube</a></div></div>
+  </div>
+  <div class="lo-price-panel">
+    <h3 class="lo-subhead">Photography Packages &amp; Prices</h3>
+    <table class="lo-prices">
+      <tr><th>Package 1</th><td>Large photo slideshow · 80+ photos · 2 song selections &amp; cover art</td><td>~ 200 rays</td></tr>
+      <tr><th>Package 2</th><td>Small photo slideshow · 50+ photos · 1 song selection &amp; cover art</td><td>~ 150 rays</td></tr>
+      <tr><th>Package 3</th><td>Large photo slideshow · 80+ photos · 2 song selections &amp; cover art</td><td>~ 150 rays</td></tr>
+      <tr><th>Package 4</th><td>Small photo slideshow · 50+ photos · 1 song selection &amp; cover art</td><td>~ 100 rays</td></tr>
+      <tr><th>Package 5</th><td>25 edited photos</td><td>~ 75 rays</td></tr>
+      <tr><th>Package 6</th><td>15 edited photos</td><td>~ 50 rays</td></tr>
+      <tr><th>Package 7</th><td>10 edited photos</td><td>~ 35 rays</td></tr>
+      <tr><th>Package 8</th><td>Raw unedited photos &amp; sitting fee</td><td>~ 50 rays / hour</td></tr>
+      <tr><th>Package 9</th><td>Custom examples photo page</td><td>~ 15 rays / page</td></tr>
+      <tr><th>Team Photos</th><td>With custom backdrops</td><td>~ 75 rays</td></tr>
+    </table>
+    <p style="text-align:center;margin:15px 0 0">Slideshow examples: YouTube <strong>@alimayjunipper</strong></p>
+  </div>
+  <div class="lo-price-panel">
+    <h3 class="lo-subhead">Business &amp; Personal</h3>
+    <table class="lo-prices">
+      <tr><th>Custom Logo</th><td></td><td>~ 20 rays</td></tr>
+      <tr><th>Custom Banner</th><td></td><td>~ 50 rays</td></tr>
+      <tr><th>Custom Bulletins</th><td></td><td>~ 50 rays</td></tr>
+      <tr><th>Custom Invitations</th><td></td><td>~ 25 rays</td></tr>
+      <tr><th>Custom Videos</th><td></td><td>~ 100 rays</td></tr>
+    </table>
+  </div>
+  <div class="lo-cta"><h3 class="lo-subhead" style="margin-top:0">Have Something in Mind?</h3>
+  <p>Contact Lady O to request a custom design, discuss a package, or arrange a photo session.</p>
+  <div class="lo-website-wrap"><a class="lo-website-button" href="https://sites.google.com/view/design-by-lady-o/home" target="_blank" rel="noopener noreferrer">Explore My Portfolio</a></div>
+  </div>
+</section>
+
+<section class="op-book" id="op-memories">
+  <h2>Causes I Support</h2>
+  <div class="op-causes-gallery">
+    <a href="https://www.redlightcenter.com/bucket/bcd4a216-d552-49f4-8255-fbf14f326a15" target="_blank" rel="noopener noreferrer"><img src="https://www.redlightcenter.com/bucket/bcd4a216-d552-49f4-8255-fbf14f326a15" alt="Cause or fundraiser supported by Lady O 1" loading="lazy"></a>
+    <a href="https://www.redlightcenter.com/bucket/6ac59572-aad5-4ef2-a5cc-476cdc6685ba" target="_blank" rel="noopener noreferrer"><img src="https://www.redlightcenter.com/bucket/6ac59572-aad5-4ef2-a5cc-476cdc6685ba" alt="Cause or fundraiser supported by Lady O 2" loading="lazy"></a>
+    <a href="https://www.redlightcenter.com/bucket/dd202ff0-defa-4bb5-a23c-e5e42b1b9777" target="_blank" rel="noopener noreferrer"><img src="https://www.redlightcenter.com/bucket/dd202ff0-defa-4bb5-a23c-e5e42b1b9777" alt="Cause or fundraiser supported by Lady O 3" loading="lazy"></a>
+  </div>
+</section>
+
+</div>
