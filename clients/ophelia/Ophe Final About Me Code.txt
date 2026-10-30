@@ -388,6 +388,52 @@ input.MPSearchText{width:440px!important;max-width:min(44vw, 440px)!important;he
 #ophelia-top .op-ggg-corner img{display:block!important;width:100%!important;height:auto!important;object-fit:contain!important;border:0!important;background:transparent!important}
 /* At narrow widths there is no safe external gutter; keep logo small within the corner. */
 @media(max-width:900px){#ophelia-top .op-ggg-corner{left:4px!important;top:4px!important;width:48px!important}}
+
+/* Cross-site header compatibility: remove the original branding row only. */
+.MPHeaderTable > tbody > tr:has(> td.MPHeaderTitleCell),
+.MPHeaderTable > tr:has(> td.MPHeaderTitleCell) {
+    display:none!important;
+}
+.MPHeaderTable td.MPHeaderTitleCell {display:none!important;}
+.MPHeaderTable td.MPHeaderNavCell {
+    width:100%!important;
+    height:auto!important;
+    padding:0!important;
+    text-align:center!important;
+    background:transparent!important;
+}
+.MPHeaderTable td.MPHeaderNavCell > img[src*="header-bottom-left.png"] {display:none!important;}
+.MPHeaderTable td.MPHeaderNavCell > table.MPNavMenuTable {
+    display:block!important;
+    width:100%!important;
+    max-width:100%!important;
+    margin:0 auto!important;
+    float:none!important;
+    background:transparent!important;
+}
+.MPHeaderTable td.MPNavMenuItem a[href*="/Clothing/" i] {
+    display:inline-flex!important;
+    align-items:center!important;
+    justify-content:center!important;
+    min-height:40px!important;
+    margin:0!important;
+    padding:10px 16px!important;
+    box-sizing:border-box!important;
+    color:#fff!important;
+    background:linear-gradient(135deg,#123d32,#281a38)!important;
+    border:1px solid #397c67!important;
+    border-radius:22px!important;
+    font:600 12px/1.2 Cinzel,Georgia,serif!important;
+    letter-spacing:.6px!important;
+    text-transform:uppercase!important;
+    text-decoration:none!important;
+    white-space:nowrap!important;
+    box-shadow:0 4px 10px #0007!important;
+}
+.MPHeaderTable td.MPNavMenuItem a[href*="/Clothing/" i]:hover {
+    background:linear-gradient(135deg,#24644d,#503065)!important;
+    color:#fff!important;
+}
 </style>
 <div id="ophelia-top">
 <a class="op-ggg-corner" href="https://www.redlightcenter.com/net/profile/view_profile.aspx?MemberID=104968384" target="_blank" rel="noopener noreferrer" title="GoodGirlGFX Utherverse Profile"><img src="https://www.redlightcenter.com/bucket/21bf03c5-87ea-4b95-81d1-de2e01e3403a" alt="Good Girl Graphics" /></a>
