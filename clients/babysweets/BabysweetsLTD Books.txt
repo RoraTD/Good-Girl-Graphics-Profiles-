@@ -1,0 +1,181 @@
+<style type="text/css">
+#babysweets-books{width:100%;max-width:100%;margin:24px auto;box-sizing:border-box;clear:both;font-family:'Trebuchet MS',Arial,sans-serif;color:#542341}
+#babysweets-books *,#babysweets-books *:before,#babysweets-books *:after{box-sizing:border-box}
+#babysweets-books .bs-panel{width:100%;margin:0 auto 24px;padding:0 0 22px;background:rgba(255,228,241,.95);border:1px solid #d86fae;border-radius:14px;overflow:hidden;box-shadow:0 5px 18px rgba(107,31,81,.12)}
+#babysweets-books .bs-heading{margin:0 0 22px;padding:18px 14px;background:linear-gradient(105deg,#b02b83,#e271b7 55%,#9045b5);color:#ffffff !important;text-align:center;font-family:Cinzel,Georgia,serif;font-weight:700;font-size:21px;letter-spacing:1.3px;text-transform:uppercase;text-shadow:0 1px 2px rgba(55,16,61,.35)}
+#babysweets-books .bs-gallery{display:flex;flex-wrap:wrap;justify-content:center;align-items:flex-start;gap:20px;padding:0 22px}
+#babysweets-books .bs-gallery-item{flex:0 1 330px;width:330px;max-width:100%;padding:12px;border:1px solid #e7b1d1;border-radius:10px;background:#fff;box-shadow:0 3px 10px rgba(120,50,94,.1);text-align:center}
+#babysweets-books .bs-gallery-item a{display:block;text-decoration:none}
+#babysweets-books .bs-gallery-item img{display:block;width:auto;height:auto;max-width:100%;max-height:512px;margin:0 auto;object-fit:contain;border:0}
+#babysweets-books .bs-copy{padding:0 25px;text-align:center;font-size:15px;line-height:1.65}
+#babysweets-books .bs-copy p{margin:0 0 12px}
+#babysweets-books .bs-coming{padding:12px 25px;text-align:center;color:#875b76;font-style:italic}
+
+#babysweets-books #bs-events-showcase.bs-panel{
+ background:rgba(255,228,241,.95);border:1px solid #d86fae;
+ border-radius:14px;box-shadow:0 5px 18px rgba(107,31,81,.12);padding-bottom:26px;
+}
+#babysweets-books #bs-events-showcase .bs-event-support{margin:0 18px 18px;text-align:center;color:#704263;font:14px/1.5 'Trebuchet MS',Arial,sans-serif}
+
+#babysweets-books h2.bs-heading,
+#babysweets-books #bs-events-showcase h2.bs-heading,
+#babysweets-books h2.bs-heading * { color:#ffffff !important; -webkit-text-fill-color:#ffffff !important; background-clip:border-box; -webkit-background-clip:border-box; }
+#babysweets-books #bs-events-showcase .bs-event-subtitle{
+ margin:0 0 20px;padding:0 12px;text-align:center;
+ color:#7d4774;background:transparent;
+ font:600 12px/1.5 'Trebuchet MS',Arial,sans-serif;letter-spacing:1.3px;
+}
+#babysweets-books #bs-events-showcase .bs-gallery{
+ display:grid;grid-template-columns:repeat(3,minmax(0,1fr));
+ gap:18px;padding:0 22px;align-items:stretch;
+}
+#babysweets-books #bs-events-showcase .bs-gallery-item{
+ width:100%;min-width:0;max-width:none;padding:7px;
+ background:linear-gradient(140deg,#f7f7fb 0%,#c6b3d0 15%,#fff 31%,#e3c8e7 70%,#f9f8fb 100%);
+ border:1px solid #cba5d0;border-radius:12px;
+ box-shadow:0 4px 12px rgba(116,45,107,.13);text-align:center;
+}
+#babysweets-books #bs-events-showcase .bs-gallery-item a{
+ display:flex;align-items:center;justify-content:center;
+ width:100%;height:100%;min-height:285px;padding:12px;
+ background:rgba(255,250,254,.92);border:1px solid rgba(218,166,215,.75);
+ border-radius:7px;overflow:hidden;
+}
+#babysweets-books #bs-events-showcase .bs-gallery-item img{
+ display:block;max-width:100%;max-height:330px;width:auto;height:auto;
+ object-fit:contain;margin:auto;border:0;
+}
+#babysweets-books #bs-events-showcase .bs-gallery-item:last-child:nth-child(3n + 1){grid-column:2}
+@media(max-width:720px){
+  #babysweets-books .bs-gallery{padding:0 12px;gap:12px}
+  #babysweets-books .bs-gallery-item{flex-basis:100%;width:100%}
+  #babysweets-books .bs-heading{font-size:17px}
+  #babysweets-books #bs-events-showcase .bs-gallery{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;padding:0 12px}
+  #babysweets-books #bs-events-showcase .bs-gallery-item a{min-height:220px}
+  #babysweets-books #bs-events-showcase .bs-gallery-item:last-child:nth-child(3n + 1){grid-column:auto}
+  #babysweets-books #bs-events-showcase .bs-gallery-item:last-child:nth-child(2n + 1){grid-column:1/-1;width:calc(50% - 6px);justify-self:center}
+}
+@media(max-width:420px){
+  #babysweets-books #bs-events-showcase .bs-gallery{grid-template-columns:1fr}
+  #babysweets-books #bs-events-showcase .bs-gallery-item:last-child:nth-child(2n + 1){grid-column:auto;width:100%}
+}
+
+#babysweets-books #bs-montana .bs-montana-logo{display:block;max-width:340px;width:85%;height:auto;margin:0 auto 16px;object-fit:contain}
+#babysweets-books #bs-montana .bs-montana-intro{max-width:740px;margin:0 auto 22px;padding:0 22px;text-align:center;font-size:15px;line-height:1.65;color:#542341}
+#babysweets-books #bs-montana .bs-montana-kicker{text-align:center;color:#884b7b;font-weight:bold;letter-spacing:.6px;margin:0 0 12px}
+#babysweets-books #bs-montana .bs-video-grid{display:flex;flex-wrap:wrap;justify-content:center;gap:16px;padding:0 20px;margin-bottom:24px}
+#babysweets-books #bs-montana .bs-video-card{width:calc(33.333% - 12px);min-width:180px;max-width:320px;padding:8px;border:1px solid #cba5d0;border-radius:10px;background:#fff;box-shadow:0 3px 10px rgba(116,45,107,.12);text-align:center}
+#babysweets-books #bs-montana .bs-video-card a{display:block;text-decoration:none;color:#71315f;font-weight:bold}
+#babysweets-books #bs-montana .bs-video-card img{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;border:0;border-radius:5px}
+#babysweets-books #bs-montana .bs-video-card span{display:block;padding:10px 2px 4px}
+#babysweets-books #bs-montana .bs-montana-callout{margin:0 22px;padding:18px 20px;background:#f8eff9;border:1px solid #d8b8df;border-radius:10px;text-align:center;color:#542341;font-size:15px;line-height:1.65}
+#babysweets-books #bs-montana .bs-montana-callout strong{display:block;margin-bottom:8px;color:#71315f;font-size:17px}
+#babysweets-books #bs-montana .bs-montana-callout p{margin:0 0 10px}
+#babysweets-books #bs-montana .bs-montana-callout p:last-child{margin-bottom:0}
+@media(max-width:650px){#babysweets-books #bs-montana .bs-video-card{width:calc(50% - 10px)}}
+@media(max-width:430px){#babysweets-books #bs-montana .bs-video-card{width:100%}}
+
+#babysweets-books .bs-awards-gallery{display:flex;flex-wrap:wrap;justify-content:center;gap:16px;padding:2px 20px 8px}
+#babysweets-books .bs-award-frame{flex:0 1 calc((100% - 32px)/3);min-width:0;max-width:330px;padding:5px;background:#f7f9fa;border:1px solid #a6b1b8;border-radius:5px;box-shadow:0 3px 9px rgba(0,132,137,.15);text-align:center}
+#babysweets-books .bs-award-frame a{display:flex;align-items:center;justify-content:center;width:100%;height:300px;padding:6px;background:#fff;border:1px solid #d4dade;text-decoration:none;overflow:hidden}
+#babysweets-books .bs-award-frame img{display:block;width:100%;height:100%;max-width:100%;max-height:100%;object-fit:contain;border:0}
+@media(max-width:720px){#babysweets-books .bs-awards-gallery{padding:2px 12px 8px;gap:12px}#babysweets-books .bs-award-frame{flex-basis:calc((100% - 12px)/2)}#babysweets-books .bs-award-frame a{height:240px}}
+@media(max-width:430px){#babysweets-books .bs-award-frame{flex-basis:100%}#babysweets-books .bs-award-frame a{height:300px}}
+
+#babysweets-books .bs-portfolio-intro{text-align:center;padding:5px 18px 20px;color:#653451;font-size:16px}
+#babysweets-books .bs-portfolio-title{margin:0 0 8px;font-size:22px;font-weight:700;color:#873b83;font-family:'Trebuchet MS',Arial,sans-serif}
+#babysweets-books .bs-portfolio-grid{display:flex;flex-wrap:wrap;justify-content:center;align-items:flex-start;gap:18px;padding:0 18px 24px}
+#babysweets-books .bs-portfolio-item{box-sizing:border-box;flex:0 0 auto;width:auto;max-width:calc(50% - 12px);min-width:0;padding:5px;background:#fff;border:2px solid #159ca3;border-radius:5px;box-shadow:0 2px 6px rgba(18,139,145,.16)}
+#babysweets-books .bs-portfolio-item a{display:block;width:auto;height:auto;text-decoration:none}
+#babysweets-books .bs-portfolio-item img{display:block;width:auto;height:auto;max-width:100%;max-height:280px;object-fit:contain;border:0}
+@media(max-width:620px){#babysweets-books .bs-portfolio-item{max-width:100%}}
+#babysweets-books .bs-portfolio-cta{text-align:center;padding:0 15px 28px}
+#babysweets-books .bs-portfolio-button{display:inline-block;padding:13px 28px;background:linear-gradient(110deg,#b02b83,#9544b1);color:#fff !important;-webkit-text-fill-color:#fff !important;border:2px solid #169ca4;border-radius:7px;font-weight:bold;font-size:16px;text-decoration:none !important;box-shadow:0 3px 9px rgba(20,146,154,.2)}
+#babysweets-books .bs-portfolio-button:hover{background:#873b83}
+
+#babysweets-books .bs-calendar-wrap{padding:0 22px 24px;text-align:center}
+#babysweets-books .bs-calendar-wrap iframe{display:block;width:100%;height:650px;border:1px solid #e7b1d1;border-radius:9px;background:#fff}
+#babysweets-books .bs-calendar-link{display:inline-block;margin-top:14px;color:#873b83!important;font-weight:bold;text-decoration:underline}
+@media(max-width:720px){#babysweets-books .bs-calendar-wrap{padding:0 12px 16px}#babysweets-books .bs-calendar-wrap iframe{height:560px}}
+</style>
+<div id="babysweets-books">
+
+  <section class="bs-panel" id="bs-event-calendar">
+    <h2 class="bs-heading" style="color:#ffffff !important;-webkit-text-fill-color:#ffffff !important;">BabySweets LTD Event Calendar</h2>
+    <div class="bs-calendar-wrap">
+      <iframe title="BabySweets LTD Event Calendar" loading="lazy" frameborder="0" scrolling="no" src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23D81B60&amp;ctz=America%2FIndiana%2FIndianapolis&amp;mode=WEEK&amp;showPrint=0&amp;showCalendars=0&amp;title=BabySweets%20LTD&amp;src=YmFieXN3ZWV0c2x0ZEBnbWFpbC5jb20&amp;src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;src=ZW4udXNhI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;color=%23D81B60&amp;color=%2333B679&amp;color=%230B8043"></iframe>
+      <a class="bs-calendar-link" href="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23D81B60&amp;ctz=America%2FIndiana%2FIndianapolis&amp;mode=WEEK&amp;showPrint=0&amp;showCalendars=0&amp;title=BabySweets%20LTD&amp;src=YmFieXN3ZWV0c2x0ZEBnbWFpbC5jb20&amp;src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;src=ZW4udXNhI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;color=%23D81B60&amp;color=%2333B679&amp;color=%230B8043" target="_blank" rel="noopener noreferrer">Open Full Calendar</a>
+    </div>
+  </section>
+  <section class="bs-panel"><h2 class="bs-heading" style="color:#ffffff !important;-webkit-text-fill-color:#ffffff !important;">The Services of BabySweets LTD</h2>
+    <div class="bs-portfolio-intro"><div>Have a look around—there's a little bit of everything in my world.</div></div>
+    <div class="bs-portfolio-grid" id="babysweets-portfolio-gallery">
+      <div class="bs-portfolio-item"><a href="https://www.redlightcenter.com/bucket/5b93c933-f29c-425b-b85b-9ac2029fc9d4" target="_blank" rel="noopener noreferrer" title="View portfolio banner 1 full size"><img src="https://www.redlightcenter.com/bucket/5b93c933-f29c-425b-b85b-9ac2029fc9d4" alt="BabySweets LTD portfolio banner 1" /></a></div>
+      <div class="bs-portfolio-item"><a href="https://www.redlightcenter.com/bucket/52a1f7ad-26da-4497-ae2d-ee95ce5fb6ae" target="_blank" rel="noopener noreferrer" title="View portfolio banner 2 full size"><img src="https://www.redlightcenter.com/bucket/52a1f7ad-26da-4497-ae2d-ee95ce5fb6ae" alt="BabySweets LTD portfolio banner 2" /></a></div>
+      <div class="bs-portfolio-item"><a href="https://www.redlightcenter.com/bucket/433a230d-a4a7-4382-ba19-e18a958fd65c" target="_blank" rel="noopener noreferrer" title="View portfolio banner 3 full size"><img src="https://www.redlightcenter.com/bucket/433a230d-a4a7-4382-ba19-e18a958fd65c" alt="BabySweets LTD portfolio banner 3" /></a></div>
+      <div class="bs-portfolio-item"><a href="https://www.redlightcenter.com/bucket/71437c72-eaae-467a-9ec9-f901682bc51f" target="_blank" rel="noopener noreferrer" title="View portfolio banner 4 full size"><img src="https://www.redlightcenter.com/bucket/71437c72-eaae-467a-9ec9-f901682bc51f" alt="BabySweets LTD portfolio banner 4" /></a></div>
+      <div class="bs-portfolio-item"><a href="https://www.redlightcenter.com/bucket/ee0053d1-86f7-42cf-a803-5cfb6c5d2085" target="_blank" rel="noopener noreferrer" title="View portfolio banner 5 full size"><img src="https://www.redlightcenter.com/bucket/ee0053d1-86f7-42cf-a803-5cfb6c5d2085" alt="BabySweets LTD portfolio banner 5" /></a></div>
+      <div class="bs-portfolio-item"><a href="https://www.redlightcenter.com/bucket/6263c76e-0c2f-4684-90c0-6bb9d19b2544" target="_blank" rel="noopener noreferrer" title="View portfolio banner 6 full size"><img src="https://www.redlightcenter.com/bucket/6263c76e-0c2f-4684-90c0-6bb9d19b2544" alt="BabySweets LTD portfolio banner 6" /></a></div>
+      <div class="bs-portfolio-item"><a href="https://www.redlightcenter.com/bucket/661d3594-7516-49df-9dee-65a9cd051f0e" target="_blank" rel="noopener noreferrer" title="View portfolio banner 7 full size"><img src="https://www.redlightcenter.com/bucket/661d3594-7516-49df-9dee-65a9cd051f0e" alt="BabySweets LTD portfolio banner 7" /></a></div>
+      <div class="bs-portfolio-item"><a href="https://www.redlightcenter.com/bucket/e2d6faeb-54ed-4b18-9ebe-47d2aedbaf52" target="_blank" rel="noopener noreferrer" title="View portfolio banner 8 full size"><img src="https://www.redlightcenter.com/bucket/e2d6faeb-54ed-4b18-9ebe-47d2aedbaf52" alt="BabySweets LTD portfolio banner 8" /></a></div>
+    </div>
+
+    <div class="bs-portfolio-cta"><a class="bs-portfolio-button" href="https://sites.google.com/view/babysweetsltd" target="_blank" rel="noopener noreferrer">Explore My Portfolio</a></div>
+  </section>
+  <section class="bs-panel" id="bs-events-showcase">
+    <h2 class="bs-heading" style="color:#ffffff !important;-webkit-text-fill-color:#ffffff !important;">Events I Am Passionate About</h2>
+    <p class="bs-event-subtitle">Awareness &bull; Community &bull; Giving Back</p>
+    <p class="bs-event-support">Click on any event below to visit its organizer’s profile and find out how you can help support the cause.</p>
+    <div class="bs-gallery">
+      <div class="bs-gallery-item"><a href="https://www.utherverse.com/net/profile/view_profile.aspx?MemberID=98722627" target="_blank"><img src="https://www.redlightcenter.com/bucket/5ea1adab-b04b-40f2-a655-6c888b84a90e" alt="Event image 1" /></a></div>
+      <div class="bs-gallery-item"><a href="https://www.utherverse.com/net/profile/view_profile.aspx?MemberID=104613346" target="_blank"><img src="https://www.redlightcenter.com/bucket/8655b9b8-7d35-43ec-ae73-5c916342f525" alt="Event image 2" /></a></div>
+      <div class="bs-gallery-item"><a href="https://www.utherverse.com/net/profile/view_profile.aspx?MemberID=104613346" target="_blank"><img src="https://www.redlightcenter.com/bucket/4e1fd2c9-a6c9-465a-ac0c-91c7464ae16e" alt="Event image 3" /></a></div>
+      <div class="bs-gallery-item"><a href="https://www.utherverse.com/net/profile/view_profile.aspx?MemberID=104951945" target="_blank"><img src="https://www.redlightcenter.com/bucket/815dbbe7-c710-49cd-8771-97bbd0f767ea" alt="Event image 4" /></a></div>
+      <div class="bs-gallery-item"><a href="https://www.utherverse.com/net/profile/view_profile.aspx?MemberID=96468245" target="_blank"><img src="https://www.redlightcenter.com/bucket/92dda6b2-afe3-45d5-90b6-f18f07ab86f1" alt="Event image 5" /></a></div>
+      <div class="bs-gallery-item"><a href="https://www.utherverse.com/net/profile/view_profile.aspx?MemberID=103045016" target="_blank"><img src="https://www.redlightcenter.com/bucket/d59d89c1-bd64-4865-806a-dbb432cfdea9" alt="Event image 6" /></a></div>
+      <div class="bs-gallery-item"><a href="https://www.utherverse.com/net/profile/view_profile.aspx?MemberID=104276209" target="_blank"><img src="https://www.redlightcenter.com/bucket/b8ea709a-17ea-4a72-9d9e-65fc63ae693f" alt="Event image 7" /></a></div>
+    </div>
+  </section>
+  <section class="bs-panel" id="bs-montana">
+    <h2 class="bs-heading" style="color:#ffffff !important;-webkit-text-fill-color:#ffffff !important;">The Montana Club</h2>
+    <img class="bs-montana-logo" src="https://www.utherverse.com/bucket/f07cb0b0-6274-4b05-a7f8-8503c796490d" alt="The Montana Club logo" />
+    <p class="bs-montana-kicker">Proud Home of the Annual Wounded Warrior Fundraiser</p>
+    <p class="bs-montana-intro">Each year, The Montana Club brings our community together to support the Wounded Warrior fundraiser. Take a look back at the events and the people who helped make them possible.</p>
+    <p class="bs-montana-kicker">Memories From Past Events — Click to Watch</p>
+    <div class="bs-video-grid">
+      <div class="bs-video-card"><a href="https://youtu.be/G824wi4yOcA" target="_blank" rel="noopener noreferrer"><img src="https://img.youtube.com/vi/G824wi4yOcA/hqdefault.jpg" alt="Watch Wounded Warrior Fundraiser 2024" /><span>2024 Fundraiser &#9654;</span></a></div>
+      <div class="bs-video-card"><a href="https://youtu.be/wusV3P2yfx0" target="_blank" rel="noopener noreferrer"><img src="https://img.youtube.com/vi/wusV3P2yfx0/hqdefault.jpg" alt="Watch Wounded Warrior Fundraiser 2025" /><span>2025 Fundraiser &#9654;</span></a></div>
+      <div class="bs-video-card"><a href="https://youtu.be/zRXbGHOvteA" target="_blank" rel="noopener noreferrer"><img src="https://img.youtube.com/vi/zRXbGHOvteA/hqdefault.jpg" alt="Watch Wounded Warrior Fundraiser 2026" /><span>2026 Fundraiser &#9654;</span></a></div>
+    </div>
+    <div class="bs-montana-callout">
+      <strong>Get Involved in Next Year's Fundraiser</strong>
+      <p>Would you like to volunteer or become a sponsor? Send BabySweets LTD a message to find out how you can help.</p>
+      <p>Applications are welcome from clubs interested in sponsoring the Wounded Warrior Project fundraiser through contributions made throughout the year toward the annual event.</p>
+    </div>
+  </section>
+  <section class="bs-panel">
+    <h2 class="bs-heading" style="color:#ffffff !important;-webkit-text-fill-color:#ffffff !important;">Awards Through the Years</h2>
+    <div class="bs-awards-gallery">
+      <div class="bs-award-frame"><a href="https://www.redlightcenter.com/bucket/3080a5dd-16cd-4f57-b821-7d6fde2ccb4e" target="_blank" rel="noopener noreferrer" title="View new award 1 full size"><img src="https://www.redlightcenter.com/bucket/3080a5dd-16cd-4f57-b821-7d6fde2ccb4e" alt="BabySweets LTD new award 1" /></a></div>
+      <div class="bs-award-frame"><a href="https://www.redlightcenter.com/bucket/50596d39-685d-405f-9350-72efa0b23a50" target="_blank" rel="noopener noreferrer" title="View new award 2 full size"><img src="https://www.redlightcenter.com/bucket/50596d39-685d-405f-9350-72efa0b23a50" alt="BabySweets LTD new award 2" /></a></div>
+      <div class="bs-award-frame"><a href="https://www.redlightcenter.com/bucket/9de4120e-d5c1-44bb-9c64-b8be3ccc1f2f" target="_blank" rel="noopener noreferrer" title="View new award 3 full size"><img src="https://www.redlightcenter.com/bucket/9de4120e-d5c1-44bb-9c64-b8be3ccc1f2f" alt="BabySweets LTD new award 3" /></a></div>
+      <div class="bs-award-frame"><a href="https://www.redlightcenter.com/bucket/4e720f7a-6730-40c1-b961-612069486aa6" target="_blank" rel="noopener noreferrer" title="View new award 4 full size"><img src="https://www.redlightcenter.com/bucket/4e720f7a-6730-40c1-b961-612069486aa6" alt="BabySweets LTD new award 4" /></a></div>
+
+      <div class="bs-award-frame"><a href="https://www.utherverse.com/bucket/d55a2adb-abb8-437d-91ae-96468ce75362" target="_blank" rel="noopener noreferrer" title="View award 1 full size"><img src="https://www.utherverse.com/bucket/d55a2adb-abb8-437d-91ae-96468ce75362" alt="BabySweets LTD award 1" /></a></div>
+      <div class="bs-award-frame"><a href="https://www.utherverse.com/bucket/bd7b9609-0ebd-4713-b3ad-9c125cfe2bdc" target="_blank" rel="noopener noreferrer" title="View award 3 full size"><img src="https://www.utherverse.com/bucket/bd7b9609-0ebd-4713-b3ad-9c125cfe2bdc" alt="BabySweets LTD award 3" /></a></div>
+      <div class="bs-award-frame"><a href="https://www.utherverse.com/bucket/1edfeeb3-007b-405d-a2ea-01ea16da5eb8" target="_blank" rel="noopener noreferrer" title="View award 6 full size"><img src="https://www.utherverse.com/bucket/1edfeeb3-007b-405d-a2ea-01ea16da5eb8" alt="BabySweets LTD award 6" /></a></div>
+      <div class="bs-award-frame"><a href="https://www.utherverse.com/bucket/1163dabc-5b8a-4b93-af34-a358cdf106aa" target="_blank" rel="noopener noreferrer" title="View award 9 full size"><img src="https://www.utherverse.com/bucket/1163dabc-5b8a-4b93-af34-a358cdf106aa" alt="BabySweets LTD award 9" /></a></div>
+      <div class="bs-award-frame"><a href="https://www.utherverse.com/bucket/bd206a95-e1d9-4bea-87f9-e7d02f5f7650" target="_blank" rel="noopener noreferrer" title="View award 12 full size"><img src="https://www.utherverse.com/bucket/bd206a95-e1d9-4bea-87f9-e7d02f5f7650" alt="BabySweets LTD award 12" /></a></div>
+      <div class="bs-award-frame"><a href="https://www.utherverse.com/bucket/b1be6f27-37bd-4337-a608-4f9e8701bcec" target="_blank" rel="noopener noreferrer" title="View award 2 full size"><img src="https://www.utherverse.com/bucket/b1be6f27-37bd-4337-a608-4f9e8701bcec" alt="BabySweets LTD award 2" /></a></div>
+      <div class="bs-award-frame"><a href="https://www.utherverse.com/bucket/18038965-7ecf-4690-a3cc-658b99728368" target="_blank" rel="noopener noreferrer" title="View award 4 full size"><img src="https://www.utherverse.com/bucket/18038965-7ecf-4690-a3cc-658b99728368" alt="BabySweets LTD award 4" /></a></div>
+      <div class="bs-award-frame"><a href="https://www.utherverse.com/bucket/2f2fca9c-4749-400c-a569-a52e8151c7eb" target="_blank" rel="noopener noreferrer" title="View award 5 full size"><img src="https://www.utherverse.com/bucket/2f2fca9c-4749-400c-a569-a52e8151c7eb" alt="BabySweets LTD award 5" /></a></div>
+      <div class="bs-award-frame"><a href="https://www.utherverse.com/bucket/beb82d16-24e0-493f-9d6b-eeaa20eda428" target="_blank" rel="noopener noreferrer" title="View award 7 full size"><img src="https://www.utherverse.com/bucket/beb82d16-24e0-493f-9d6b-eeaa20eda428" alt="BabySweets LTD award 7" /></a></div>
+      <div class="bs-award-frame"><a href="https://www.utherverse.com/bucket/ddd078f9-923b-4c53-833b-1c6938d52b1f" target="_blank" rel="noopener noreferrer" title="View award 8 full size"><img src="https://www.utherverse.com/bucket/ddd078f9-923b-4c53-833b-1c6938d52b1f" alt="BabySweets LTD award 8" /></a></div>
+      <div class="bs-award-frame"><a href="https://www.utherverse.com/bucket/613d7c25-116d-44a5-bdf6-4de8607132b0" target="_blank" rel="noopener noreferrer" title="View award 11 full size"><img src="https://www.utherverse.com/bucket/613d7c25-116d-44a5-bdf6-4de8607132b0" alt="BabySweets LTD award 11" /></a></div>
+      <div class="bs-award-frame"><a href="https://www.utherverse.com/bucket/58cfa1c4-22f1-4356-b0f6-f5f7593c1249" target="_blank" rel="noopener noreferrer" title="View award 14 full size"><img src="https://www.utherverse.com/bucket/58cfa1c4-22f1-4356-b0f6-f5f7593c1249" alt="BabySweets LTD award 14" /></a></div>
+      <div class="bs-award-frame"><a href="https://www.utherverse.com/bucket/e9b96de8-c35a-4c72-8e69-47dc48b2adf7" target="_blank" rel="noopener noreferrer" title="View award 13 full size"><img src="https://www.utherverse.com/bucket/e9b96de8-c35a-4c72-8e69-47dc48b2adf7" alt="BabySweets LTD award 13" /></a></div>
+      <div class="bs-award-frame"><a href="https://www.utherverse.com/bucket/473708b4-21ed-4310-bf77-8ac95cd418c5" target="_blank" rel="noopener noreferrer" title="View award 17 full size"><img src="https://www.utherverse.com/bucket/473708b4-21ed-4310-bf77-8ac95cd418c5" alt="BabySweets LTD award 17" /></a></div>
+      <div class="bs-award-frame"><a href="https://www.utherverse.com/bucket/653f5dfc-8fe4-4b34-8f79-80fde08b10e2" target="_blank" rel="noopener noreferrer" title="View award 10 full size"><img src="https://www.utherverse.com/bucket/653f5dfc-8fe4-4b34-8f79-80fde08b10e2" alt="BabySweets LTD award 10" /></a></div>
+    </div>
+  </section>
+</div>
