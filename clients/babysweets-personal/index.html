@@ -29,8 +29,9 @@ footer{text-align:center;border-top:1px solid #35c9e044;margin-top:28px;padding-
 <script>
 (function(){
 var password="RamsHouse#2026";
+try{if(sessionStorage.getItem('ggg-babysweets-personal-unlocked')==='yes')document.body.classList.add('unlocked')}catch(e){}
 var gate=document.getElementById('login');
-gate.addEventListener('submit',function(e){e.preventDefault();if(document.getElementById('password').value===password){document.body.classList.add('unlocked');document.getElementById('error').textContent='';}else{document.getElementById('error').textContent='Incorrect password. Please try again.';}});
+gate.addEventListener('submit',function(e){e.preventDefault();if(document.getElementById('password').value===password){document.body.classList.add('unlocked');try{sessionStorage.setItem('ggg-babysweets-personal-unlocked','yes')}catch(e){}document.getElementById('error').textContent='';}else{document.getElementById('error').textContent='Incorrect password. Please try again.';}});
 var sources={about:'./about-me.txt',books:'./books.txt',interests:'./interests.txt'};
 Object.keys(sources).forEach(function(k){fetch(sources[k]).then(function(r){if(!r.ok)throw Error('HTTP '+r.status);return r.text()}).then(function(t){document.getElementById(k).value=t}).catch(function(){document.getElementById(k).placeholder='Unable to load. Please use Download.'})});
 document.querySelectorAll('[data-copy]').forEach(function(b){b.addEventListener('click',function(){var t=document.getElementById(b.getAttribute('data-copy'));if(!t.value){alert('Code is loading. Please use Download if it does not appear.');return}function done(){var old=b.textContent;b.textContent='Copied!';setTimeout(function(){b.textContent=old},1800)}if(navigator.clipboard&&window.isSecureContext){navigator.clipboard.writeText(t.value).then(done).catch(function(){t.select();document.execCommand('copy');done()})}else{t.select();document.execCommand('copy');done()}})});
