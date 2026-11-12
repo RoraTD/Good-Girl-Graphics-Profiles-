@@ -1,0 +1,14 @@
+<!-- BABYSWEETS PERSONAL - INTERESTS RIBBONS -->
+<style type="text/css">
+#bs-awareness,#bs-awareness *{box-sizing:border-box}
+#bs-awareness{display:block;width:100%!important;max-width:100%!important;margin:0 auto 20px!important;padding:16px!important;background:#1b1028;border:1px solid #35C9E0;border-radius:18px;text-align:center;overflow:hidden}
+#bs-awareness .bs-ribbon-row{display:flex;justify-content:center;align-items:stretch;gap:24px;width:100%;max-width:100%;margin:0 auto}
+#bs-awareness .bs-ribbon{flex:1 1 0;min-width:0;padding:16px;background:#21132e;border:1px solid #35C9E0;border-radius:16px;text-align:center}
+#bs-awareness .bs-ribbon img{display:block;width:100%;max-width:320px;height:auto;margin:0 auto;border:none;background:transparent}
+@media(max-width:650px){#bs-awareness{padding:10px!important}#bs-awareness .bs-ribbon-row{flex-wrap:wrap}#bs-awareness .bs-ribbon{flex:1 1 100%}}
+</style>
+<div id="bs-awareness"><div class="bs-ribbon-row">
+<div class="bs-ribbon"><img src="https://www.redlightcenter.com/bucket/35113ddb-ffc0-427b-9886-7996d60b60c6" alt="Lupus Awareness"></div>
+<div class="bs-ribbon"><img src="https://www.redlightcenter.com/bucket/7f276b2a-a95d-4033-8e87-84afc40e72b8" alt="PTSD Awareness"></div>
+<div class="bs-ribbon"><img src="https://www.redlightcenter.com/bucket/5f6aabd9-2ef1-4a06-b40f-34e9b5ed3d2b" alt="Suicide Prevention"></div>
+</div></div>
