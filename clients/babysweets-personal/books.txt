@@ -1,0 +1,80 @@
+<style type="text/css">
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@600&display=swap");
+#bs-books-content,#bs-books-content *{box-sizing:border-box}
+#bs-books-content{width:100%;max-width:100%;margin:0 auto 20px;padding:0;font-family:Georgia,serif;color:#f7efff}
+#bs-books-content .bs-books-section{width:100%;max-width:100%;margin:0 0 18px;padding:14px;border:1px solid #35c9e0;border-radius:16px;background:linear-gradient(145deg,#1b1028,#110b1d);box-shadow:0 0 14px rgba(53,201,224,.15);overflow:hidden}
+#bs-books-content .bs-books-title{width:100%;margin:0;padding:15px 10px 12px;text-align:center;background:transparent;border:0;border-bottom:1px solid rgba(53,201,224,.35);color:#f6f2fb;font-family:Cinzel,Georgia,serif;font-size:34px;font-weight:600;letter-spacing:2px;line-height:1.4;text-shadow:0 1px 0 #fff,0 0 7px rgba(196,141,255,.8),0 0 16px rgba(154,65,226,.65),0 0 28px rgba(116,35,187,.4)}
+#bs-books-content .bs-books-body{padding:18px 12px;text-align:center;color:#e9dcf3;font-size:14px;line-height:1.65;overflow-wrap:anywhere}
+#bs-my-music .bs-music-subtitle{text-align:center;font:11px Arial,sans-serif;letter-spacing:2px;color:#b9b0cf;margin:14px 0 16px}
+#bs-my-music .bs-radio-heading{text-align:center;color:#f6efff;font:bold 17px Arial,sans-serif;letter-spacing:2px;margin:0 0 14px}
+#bs-my-music .bs-radio-heading span{color:#35c9e0}
+#bs-my-music .bs-player-frame{width:100%;max-width:560px;margin:0 auto;padding:10px;background:#100b1c;border:1px solid #35c9e0;border-radius:18px;box-shadow:0 0 20px rgba(53,201,224,.16)}
+#bs-my-music .bs-player-frame iframe{display:block;width:100%;max-width:100%;height:300px;border:0;border-radius:12px;background:#100b1c}
+#bs-my-music .bs-music-footer{margin:16px 0 2px;text-align:center;color:#d9cee9;font:italic 13px Georgia,serif}
+#bs-my-love .bs-photo-gallery{display:flex;flex-wrap:wrap;justify-content:center;align-items:flex-start;gap:12px;width:100%;max-width:100%;padding:12px 0 4px}
+#bs-my-love .bs-gallery-photo{display:block;width:calc((100% - 24px)/3);max-width:calc((100% - 24px)/3);min-width:0;height:auto;object-fit:contain;align-self:flex-start;border:2px solid #35c9e0;border-radius:8px;background:#100b1c;box-shadow:0 0 10px rgba(53,201,224,.18)}
+/* RAMS: TWO SMALL PHOTOS LEFT, LARGE FEATURE CENTER, TWO SMALL PHOTOS RIGHT */
+#bs-my-rams .bs-books-body{padding:12px 8px 16px;letter-spacing:2px;color:#d9c8e9}
+#bs-my-rams .bs-rams-gallery{display:grid;grid-template-columns:1fr 1.65fr 1fr;align-items:center;gap:10px;width:100%;max-width:100%;margin:0 auto;padding:0 2px 4px}
+#bs-my-rams .bs-rams-left,#bs-my-rams .bs-rams-right{min-width:0;display:flex;flex-direction:column;gap:10px}
+#bs-my-rams .bs-rams-middle{min-width:0;display:flex;align-items:center;justify-content:center}
+#bs-my-rams .bs-rams-gallery img{display:block;width:100%;max-width:100%;height:auto;margin:0;border:1px solid #35c9e0;border-radius:6px;background:#100b1c;box-shadow:0 0 8px rgba(53,201,224,.15)}
+@media(max-width:600px){#bs-books-content .bs-books-section{padding:10px}#bs-books-content .bs-books-title{font-size:26px}#bs-my-music .bs-player-frame iframe{height:270px}#bs-my-love .bs-photo-gallery{gap:8px}#bs-my-love .bs-gallery-photo{width:calc((100% - 16px)/3);max-width:calc((100% - 16px)/3)}#bs-my-rams .bs-rams-gallery,#bs-my-rams .bs-rams-right{gap:6px}}
+#bs-my-music .bs-radio-stage{display:grid;grid-template-columns:minmax(48px,1fr) minmax(0,560px) minmax(48px,1fr);align-items:center;gap:14px;width:100%;margin:0 auto}
+#bs-my-music .bs-side-spectrum{height:240px;display:flex;align-items:center;justify-content:center;gap:4px;overflow:hidden;padding:8px 0}
+#bs-my-music .bs-side-spectrum span{display:block;flex:0 1 6px;max-width:6px;min-width:3px;height:55px;border-radius:4px;background:linear-gradient(180deg,#f1b8ff 0%,#a557e8 35%,#35c9e0 75%,#9ef3e9 100%);box-shadow:0 0 8px rgba(53,201,224,.35);animation:bs-spectrum-pulse 1.7s ease-in-out infinite alternate;transform-origin:center}
+#bs-my-music .bs-side-spectrum span:nth-child(5n+1){animation-delay:-.35s;height:72px}#bs-my-music .bs-side-spectrum span:nth-child(5n+2){animation-delay:-1.1s;height:108px}#bs-my-music .bs-side-spectrum span:nth-child(5n+3){animation-delay:-.7s;height:145px}#bs-my-music .bs-side-spectrum span:nth-child(5n+4){animation-delay:-1.4s;height:90px}#bs-my-music .bs-side-spectrum span:nth-child(5n){animation-delay:-.15s;height:120px}
+#bs-my-music .bs-side-spectrum.bs-spectrum-right span{animation-direction:alternate-reverse}
+@keyframes bs-spectrum-pulse{from{transform:scaleY(.38);opacity:.72}to{transform:scaleY(1);opacity:1}}
+@media(max-width:700px){#bs-my-music .bs-radio-stage{grid-template-columns:minmax(18px,1fr) minmax(0,560px) minmax(18px,1fr);gap:5px}#bs-my-music .bs-side-spectrum{gap:2px;height:180px}#bs-my-music .bs-side-spectrum span{min-width:2px;max-width:4px}}
+@media(prefers-reduced-motion:reduce){#bs-my-music .bs-side-spectrum span{animation:none}}
+#bs-my-family .bs-family-gallery{display:flex;flex-wrap:wrap;align-items:flex-start;justify-content:center;gap:14px;padding:12px 0 4px}
+#bs-my-family .bs-family-gallery img{display:block;width:calc(50% - 7px);max-width:100%;height:auto;object-fit:contain;border:2px solid #35c9e0;border-radius:9px;background:#100b1c;box-shadow:0 0 10px rgba(53,201,224,.18)}
+</style>
+<div id="bs-books-content">
+<div id="bs-my-music" class="bs-books-section">
+<div class="bs-books-title">My Music</div>
+<div class="bs-music-subtitle">THE SOUNDTRACK TO MY WORLD</div>
+<div class="bs-radio-heading"><span>&#9835;</span> BABYSWEETS RADIO <span>&#9835;</span></div>
+<div class="bs-radio-stage">
+<div class="bs-side-spectrum bs-spectrum-left" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+<div class="bs-player-frame"><iframe src="https://player.purepowerstreams.net/embed/babysweets" title="Listen to BabySweets" width="480" height="300" allow="autoplay" loading="lazy"></iframe></div>
+<div class="bs-side-spectrum bs-spectrum-right" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+</div>
+<div class="bs-music-footer">Turn it up, settle in, and enjoy the music.</div>
+</div>
+<div id="bs-my-love" class="bs-books-section">
+<div class="bs-books-title">My Love</div>
+<div class="bs-books-body">For the love and moments closest to my heart.</div>
+<div class="bs-photo-gallery">
+<img class="bs-gallery-photo" src="https://hosting.photobucket.com/23f96c35-2358-4a75-a943-1d86b7bec331/47946715-c3fd-4fe6-b380-62394426420c.jpg" alt="My Love 1">
+<img class="bs-gallery-photo" src="https://hosting.photobucket.com/23f96c35-2358-4a75-a943-1d86b7bec331/99fc5b06-b35d-42aa-82d0-6883bfd719e6.png" alt="My Love 2">
+<img class="bs-gallery-photo" src="https://hosting.photobucket.com/23f96c35-2358-4a75-a943-1d86b7bec331/404bfae1-d735-4294-9d64-a2e41055c180.png" alt="My Love 3">
+<img class="bs-gallery-photo" src="https://hosting.photobucket.com/23f96c35-2358-4a75-a943-1d86b7bec331/fb5fc5b7-24ac-40e7-9a0b-a2ffa02f0b84.jpg" alt="My Love 4">
+<img class="bs-gallery-photo" src="https://hosting.photobucket.com/23f96c35-2358-4a75-a943-1d86b7bec331/27a1541d-9b7a-47c1-8e3f-7088cdffa706.jpg" alt="My Love 5">
+<img class="bs-gallery-photo" src="https://hosting.photobucket.com/23f96c35-2358-4a75-a943-1d86b7bec331/feeee83f-b808-4cb8-b8f1-708e0ece0d17.jpg" alt="My Love 6">
+<img class="bs-gallery-photo" src="https://hosting.photobucket.com/23f96c35-2358-4a75-a943-1d86b7bec331/1c7a61df-0c36-4c15-884d-511fe1567e08.jpg" alt="My Love 7">
+<img class="bs-gallery-photo" src="https://hosting.photobucket.com/23f96c35-2358-4a75-a943-1d86b7bec331/a09352f7-698f-4f9c-a34c-e7d37c8cb642.jpg" alt="My Love 8">
+<img class="bs-gallery-photo" src="https://hosting.photobucket.com/23f96c35-2358-4a75-a943-1d86b7bec331/595c3023-5ed9-4193-b18a-5580c527131a.jpg" alt="My Love 9">
+<img class="bs-gallery-photo" src="https://hosting.photobucket.com/23f96c35-2358-4a75-a943-1d86b7bec331/1a8ca1ba-7a13-4f30-85a5-63ca79366338.jpg" alt="My Love 10">
+<img class="bs-gallery-photo" src="https://hosting.photobucket.com/23f96c35-2358-4a75-a943-1d86b7bec331/f77c7969-2f50-4b93-9974-db07516c6c01.jpg" alt="My Love 11">
+<img class="bs-gallery-photo" src="https://hosting.photobucket.com/23f96c35-2358-4a75-a943-1d86b7bec331/5533459b-a11e-45a3-b09f-2d90e42914fa.png" alt="My Love 12">
+</div></div>
+<div id="bs-my-rams" class="bs-books-section">
+<div class="bs-books-title">My Rams Football</div>
+<div class="bs-books-body">HORNS UP &bull; RAMS HOUSE</div>
+<div class="bs-rams-gallery">
+<div class="bs-rams-left"><img src="https://hosting.photobucket.com/23f96c35-2358-4a75-a943-1d86b7bec331/9193babe-0d67-44f3-b4f2-1bbb556df82b.png" alt="Just a Girl Who Loves the Rams"><img src="https://hosting.photobucket.com/23f96c35-2358-4a75-a943-1d86b7bec331/e41af92c-13a3-46f2-bcdf-ea10401f64d5.png" alt="Rams photo 2"></div>
+<div class="bs-rams-middle"><img src="https://hosting.photobucket.com/23f96c35-2358-4a75-a943-1d86b7bec331/a8a2fd10-3179-4d19-a6aa-6623087ebf2c.png" alt="Rams feature photo"></div>
+<div class="bs-rams-right"><img src="https://hosting.photobucket.com/23f96c35-2358-4a75-a943-1d86b7bec331/9d36e236-bdcd-44c4-8451-496e787347ec.png" alt="Rams stadium photo"><img src="https://hosting.photobucket.com/23f96c35-2358-4a75-a943-1d86b7bec331/9c5d4008-45f2-4549-a4cb-2226b90eb25a.png" alt="Rams photo 4"></div>
+</div></div>
+<div id="bs-my-family" class="bs-books-section">
+<div class="bs-books-title">My Family</div>
+<div class="bs-books-body">The people who mean the world to me.</div>
+<div class="bs-family-gallery">
+<img src="https://hosting.photobucket.com/23f96c35-2358-4a75-a943-1d86b7bec331/8d56f33a-cda4-4690-bf9f-95a1fc77adc0.png" alt="My Family Photo 1">
+<img src="https://hosting.photobucket.com/23f96c35-2358-4a75-a943-1d86b7bec331/403fcb5a-cb70-4786-ab81-75e35b6f220c.png" alt="My Family Photo 2">
+</div>
+</div>
+</div>
+<!-- END BABYSWEETS BOOKS -->
