@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>BabySweets Personal Profile | Good Girl Graphics</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&display=swap');
+:root{color-scheme:dark;--teal:#35c9e0;--purple:#b988e5;--text:#f4ecfa}*{box-sizing:border-box}
+body{margin:0;background:radial-gradient(ellipse at top,#38204b 0%,#150d23 45%,#0b0913 100%);color:var(--text);font:15px/1.6 Georgia,serif}
+header{border-bottom:1px solid #35c9e055;background:#120d1d;padding:18px 24px;display:flex;justify-content:space-between;align-items:center;gap:14px;flex-wrap:wrap}
+.brand{font:600 17px Cinzel,Georgia,serif;letter-spacing:.08em}a{color:#a5edf4}main{max-width:1050px;margin:auto;padding:42px 20px 70px}
+.eyebrow{color:var(--teal);letter-spacing:.18em;text-transform:uppercase;font:700 12px Arial,sans-serif}
+h1,h2{font-family:Cinzel,Georgia,serif}h1{font-size:clamp(29px,5vw,48px);margin:8px 0;color:#e4c9f7}h2{font-size:23px;color:#e7d3f6;margin:0 0 12px}
+.intro{color:#d0c3d9;max-width:780px}section{background:linear-gradient(135deg,#21132e,#120c1d);border:1px solid var(--teal);border-radius:15px;margin:22px 0;padding:24px;box-shadow:0 8px 30px #0005}
+section p{color:#d2c7df;margin:6px 0 16px}.actions{display:flex;flex-wrap:wrap;gap:10px;margin:12px 0}
+button,.download{background:linear-gradient(120deg,#cba4eb,#8fe3e8);color:#160f20;border:0;border-radius:8px;padding:11px 17px;font:700 13px Arial,sans-serif;cursor:pointer;text-decoration:none;display:inline-block}
+button:hover,.download:hover{filter:brightness(1.13)}textarea{width:100%;height:160px;resize:vertical;background:#0b0914;color:#eee5f4;border:1px solid #35c9e077;border-radius:8px;padding:14px;font:12px/1.5 Consolas,monospace}
+ol{padding-left:22px}li{margin:7px 0}.small{font-size:13px;color:#baaec7}.notice{border-left:3px solid var(--teal);padding:10px 15px;background:#35c9e011}
+footer{text-align:center;border-top:1px solid #35c9e044;margin-top:28px;padding-top:24px;color:#b3a4c3;font-size:13px}
+</style></head><body>
+<header><div class="brand">GOOD GIRL GRAPHICS <span style="color:#35c9e0">•</span> Bound by Creativity</div><a href="../../">Client Delivery Hub</a></header>
+<main><div class="eyebrow">Personal profile delivery • RLC / Utherverse</div><h1>BabySweets — Personal Profile</h1>
+<p class="intro">Your personal profile installation kit. This is <strong>BabySweets' personal profile</strong>, not BabySweets LTD. Each section below includes its complete copy-ready code and a downloadable text file.</p>
+<section><h2>Installation Instructions</h2><ol><li>Back up your existing profile code.</li><li>Copy <strong>About Me</strong> into your About Me field and save.</li><li>Copy <strong>Books</strong> into your Books field and save.</li><li>Copy <strong>Interests</strong> into your Interests field and save.</li><li>Refresh your profile in Red Light Center and Utherverse to check the layout.</li></ol></section>
+<section><h2>01 · About Me</h2><p>Complete personal profile styling, banner, navigation, profile layout and links.</p><div class="actions"><button data-copy="about">Copy Complete About Me Code</button><a class="download" href="./about-me.txt" download>Download About Me (.txt)</a></div><textarea id="about" readonly spellcheck="false" placeholder="Loading code…"></textarea></section>
+<section><h2>02 · Books</h2><p>My Music with side equalizers, My Love (three photos per row), My Rams Football (five photos with the large center feature), and My Family.</p><div class="actions"><button data-copy="books">Copy Complete Books Code</button><a class="download" href="./books.txt" download>Download Books (.txt)</a></div><textarea id="books" readonly spellcheck="false" placeholder="Loading code…"></textarea></section>
+<section><h2>03 · Interests</h2><p>Three awareness ribbons: Lupus, PTSD, and Suicide Prevention.</p><div class="actions"><button data-copy="interests">Copy Complete Interests Code</button><a class="download" href="./interests.txt" download>Download Interests (.txt)</a></div><textarea id="interests" readonly spellcheck="false" placeholder="Loading code…"></textarea></section>
+<section><h2>Need Help?</h2><p>Click the Copy button for a section and paste the entire code into the matching RLC/Utherverse field. If copying fails, use Download Code and copy from the text file. Contact Good Girl Graphics for adjustments.</p><div class="notice">Keep your original code backed up until you've confirmed all three sections display correctly.</div></section>
+<section><h2>Copyright &amp; Terms of Use</h2><p>© 2026 Good Girl Graphics. Custom personal profile designed by Rora for BabySweets. For BabySweets' personal use only. Please do not resell, redistribute, or claim the design as your own.</p></section>
+<section style="text-align:center"><h2>A Personal Thank You</h2><p>BabySweets, thank you for trusting Good Girl Graphics with your personal profile. I hope this space feels like you and celebrates everything you love.</p><p><em>Bound by Creativity</em></p><p>— Rora | Good Girl Graphics</p></section>
+<footer>© 2026 Good Girl Graphics • All Rights Reserved<br>Your vision • Your style • Your rules.</footer></main>
+<script>
+(function(){
+var sources={about:'./about-me.txt',books:'./books.txt',interests:'./interests.txt'};
+Object.keys(sources).forEach(function(k){fetch(sources[k]).then(function(r){if(!r.ok)throw Error('HTTP '+r.status);return r.text()}).then(function(t){document.getElementById(k).value=t}).catch(function(){document.getElementById(k).placeholder='Unable to load. Please use Download.'})});
+document.querySelectorAll('[data-copy]').forEach(function(b){b.addEventListener('click',function(){var t=document.getElementById(b.getAttribute('data-copy'));if(!t.value){alert('Code is loading. Please use Download if it does not appear.');return}function done(){var old=b.textContent;b.textContent='Copied!';setTimeout(function(){b.textContent=old},1800)}if(navigator.clipboard&&window.isSecureContext){navigator.clipboard.writeText(t.value).then(done).catch(function(){t.select();document.execCommand('copy');done()})}else{t.select();document.execCommand('copy');done()}})});
+})();
+</script></body></html>
